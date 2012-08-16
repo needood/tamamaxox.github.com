@@ -1,0 +1,11 @@
+auto: true
+server_port: 4001
+title : tamamaxox-test
+author: 
+  name: tamamaxox
+
+F:
+  path:
+    css: /assets/stylesheets
+    libs: /assets/libs
+    script: /assets/javascript
