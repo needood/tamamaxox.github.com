@@ -9,3 +9,7 @@ F:
     css: /assets/stylesheets
     libs: /assets/libs
     script: /assets/javascript
+
+
+production_url : http://tamamaxox.github.com
+
