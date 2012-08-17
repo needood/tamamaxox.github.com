@@ -11,15 +11,22 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="/index.html">首页</a></li>
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-        </ul>
-    </nav>
+    <div id="fbox">
+        <nav>
+            <ul>
+                <li><a href="/index.html">首页</a></li>
+                {% assign pages_list = site.pages %}
+                {% assign group = 'navigation' %}
+                {% include JB/pages_list %}
+            </ul>
+        </nav>
+        {{ content }}
+    	<div id="fbox-footer">
+        </div>
+    </div>
 
 
-    {{ content }}
+    <footer>
+        design by 哼
+    </footer>
 </body>
