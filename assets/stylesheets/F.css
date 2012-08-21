@@ -1,0 +1,59 @@
+/* line 10, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+.fhas-footer html, .fhas-footer body {
+  height: 100%;
+}
+/* line 12, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+.fhas-footer .f-box {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -50px;
+}
+/* line 18, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+.fhas-footer .f-box .f-box-footer {
+  height: 50px;
+}
+/* line 20, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+.fhas-footer .f-footer {
+  clear: both;
+  position: relative;
+  height: 50px;
+}
+/* line 10, ../sass/F.scss */
+.fhas-footer.falways-footer .f-box {
+  margin-bottom: 0px;
+}
+/* line 13, ../sass/F.scss */
+.fhas-footer.falways-footer .f-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+
+/* line 20, ../sass/F.scss */
+.f-inline-block {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 49, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-block-list.scss */
+.f-inline-block li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  white-space: nowrap;
+}
+
+/* line 24, ../sass/F.scss */
+.f-unit {
+  padding: 10px 10px 10px 10px;
+}
