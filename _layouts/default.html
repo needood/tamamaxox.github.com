@@ -10,23 +10,27 @@
     <script type="text/javascript" src="{{ site.F.path.libs }}/require.js" data-main="{{ site.F.path.script }}/m" ></script>
 </head>
 
-<body>
-    <div id="fbox">
+<body class="fhas-footer">
+    <div class="f-box">
         <nav>
-            <ul>
-                <li><a href="/index.html">首页</a></li>
+            <div id="site-logo"></div>
+            <ul class="f-inline-block">
                 {% assign pages_list = site.pages %}
                 {% assign group = 'navigation' %}
-                {% include JB/pages_list %}
+                {% include F/pages_list %}
             </ul>
         </nav>
-        {{ content }}
-    	<div id="fbox-footer">
+        <div class="f-unit">
+            {{ content }}
+        </div>
+    	<div class="f-box-footer">
         </div>
     </div>
 
 
-    <footer>
-        design by 哼
-    </footer>
+    <div class="f-footer" id="site-footer">
+        <div class="f-unit">
+            design by 哼
+        </div>
+    </div>
 </body>

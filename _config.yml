@@ -1,4 +1,5 @@
 auto: true
+pygments: true
 server_port: 4001
 title : tamamaxox-test
 author: 
@@ -9,7 +10,7 @@ F:
     css: /assets/stylesheets
     libs: /assets/libs
     script: /assets/javascript
-
+  nav_total: 4
 
 production_url : http://tamamaxox.github.com
 

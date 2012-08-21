@@ -3,8 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/typography/links";
-@import "compass/layout";
+@import "compass/typography";
 
 h1{
 	font-size:200%;
@@ -23,18 +22,27 @@ h5{
 }
 
 nav{
-    a{
-        @include unstyled-link;
-        @include link-colors(darken(white,70%),#6BD0CF);
-    }
-    padding-bottom:5px;
+    padding-bottom:10px;
+    padding-top:10px;
     border-bottom:1px solid darken(white,40%);
     margin-bottom:5px;
+    ul{
+        text-align:center;
+        li{
+            margin:{
+                left:5px;
+                right:5px;
+            }
+            a{
+                @include unstyled-link;
+                @include link-colors(darken(white,70%),#6BD0CF);
+            }
+        }
+    }
 }
 
-
-
-@include sticky-footer(30px, "#fbox", "#fbox-footer", "footer");
-footer{
-    padding-top:10px;
+#site-footer{
+    background-color: lighten(black,5%);
+    color:white;
 }
+

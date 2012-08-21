@@ -2,79 +2,65 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 9, ../sass/custom.scss */
+/* line 8, ../sass/custom.scss */
 h1 {
   font-size: 200%;
 }
 
-/* line 12, ../sass/custom.scss */
+/* line 11, ../sass/custom.scss */
 h2 {
   font-size: 150%;
 }
 
-/* line 15, ../sass/custom.scss */
+/* line 14, ../sass/custom.scss */
 h3 {
   font-size: 120%;
 }
 
-/* line 18, ../sass/custom.scss */
+/* line 17, ../sass/custom.scss */
 h4 {
   font-size: 100%;
 }
 
-/* line 21, ../sass/custom.scss */
+/* line 20, ../sass/custom.scss */
 h5 {
   font-size: 80%;
 }
 
-/* line 25, ../sass/custom.scss */
+/* line 24, ../sass/custom.scss */
 nav {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   border-bottom: 1px solid #999999;
   margin-bottom: 5px;
 }
-/* line 26, ../sass/custom.scss */
-nav a {
+/* line 29, ../sass/custom.scss */
+nav ul {
+  text-align: center;
+}
+/* line 31, ../sass/custom.scss */
+nav ul li {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* line 36, ../sass/custom.scss */
+nav ul li a {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
   color: #4d4d4d;
 }
 /* line 6, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
-nav a:active, nav a:focus {
+nav ul li a:active, nav ul li a:focus {
   outline: none;
 }
 /* line 24, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-nav a:hover {
+nav ul li a:hover {
   color: #6bd0cf;
 }
 
-/* line 10, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-html, body {
-  height: 100%;
-}
-
-/* line 12, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-#fbox {
-  clear: both;
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin-bottom: -30px;
-}
-/* line 18, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-#fbox #fbox-footer {
-  height: 30px;
-}
-
-/* line 20, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
-footer {
-  clear: both;
-  position: relative;
-  height: 30px;
-}
-
-/* line 38, ../sass/custom.scss */
-footer {
-  padding-top: 10px;
+/* line 44, ../sass/custom.scss */
+#site-footer {
+  background-color: #0d0d0d;
+  color: white;
 }
