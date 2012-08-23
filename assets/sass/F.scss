@@ -1,0 +1,111 @@
+
+@import "compass/layout";
+@import "compass/typography";
+
+$footer-height:50px;
+$f-unit:10px 10px 10px 10px;
+.fhas-footer{
+    @include sticky-footer($footer-height, ".f-box", ".f-box-footer", ".f-footer");
+    &.falways-footer{
+        .f-box{
+            margin-bottom:0px;
+        }
+        .f-footer{
+            position:absolute;
+            width:100%;
+            bottom:0px;
+        }
+    }
+}
+.f-inline-block{
+    @include inline-block-list;
+}
+
+.f-unit{
+    padding:$f-unit;
+}
+
+
+
+
+
+
+.clearfix {
+    *zoom: 1;
+    &:before{
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+    &:after{
+        display: table;
+        content: "";
+        line-height: 0;
+        clear: both;
+    }
+}
+
+.row{
+    margin-left:-20px;
+    @extend .clearfix;
+}
+.row-fluid{
+    width: 100%;
+    @extend .clearfix;
+}
+.float-left{
+    float:left;
+}
+.span{
+    @extend .float-left;
+    margin-left:20px;
+    &.pull-right{
+        float:right;
+    }
+    &.hide{
+        display:none;
+    }
+}
+.row-fluid-span{
+    @extend .float-left;
+    margin-left:20 /940 * 100%;
+    display: block;
+    min-height: 30px;
+    &:first-child{
+        margin-left:0;
+    }
+}
+@mixin span($num){
+    .span#{$num}{
+        @extend .span;
+        width:$num * 80 - 20px;
+    }
+    .offset#{$num}{
+        margin-left:$num * 60 + 20px;
+    }
+    .row-fluid{
+        .span#{$num}{
+            @extend .row-fluid-span;
+            width:($num * 80 - 20) / 940 * 100%;
+        }
+        .offset#{$num}{
+            margin-left:($num * 80 + 20) / 940 * 100%;
+            &:first-child{
+                margin-left:($num * 80) / 940 * 100%;
+            }
+        }
+    }
+}
+
+@include span(1);
+@include span(2);
+@include span(3);
+@include span(4);
+@include span(5);
+@include span(6);
+@include span(7);
+@include span(8);
+@include span(9);
+@include span(10);
+@include span(11);
+@include span(12);
