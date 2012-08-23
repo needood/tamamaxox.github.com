@@ -10,3 +10,6 @@ Thumbs.db
 
 .rbenv-version
 .rvmrc
+*.swp
+*.scss
+*.coffee
