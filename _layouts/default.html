@@ -10,27 +10,28 @@
     <script type="text/javascript" src="{{ site.F.path.libs }}/require.js" data-main="{{ site.F.path.script }}/m" ></script>
 </head>
 
-<body class="fhas-footer">
-    <div class="f-box">
-        <nav>
-            <div id="site-logo"></div>
-            <ul class="f-inline-block">
-                {% assign pages_list = site.pages %}
-                {% assign group = 'navigation' %}
-                {% include F/pages_list %}
-            </ul>
+<body class="fhas-footer falways-footer">
+    <div class="f-body-box f-box">
+        <nav class="">
+			<div class="f-block">
+				<ul class="f-inline-block">
+					{% assign pages_list = site.pages %}
+					{% assign group = 'navigation' %}
+					{% include F/pages_list %}
+				</ul>
+			</div>
         </nav>
-        <div class="f-unit">
+
+		<div id="site-logo-hello"></div>
+		<div id="site-logo"></div>
+        <article class="f-unit">
             {{ content }}
-        </div>
+        </article>
     	<div class="f-box-footer">
         </div>
     </div>
 
 
-    <div class="f-footer" id="site-footer">
-        <div class="f-unit">
-            design by 哼
-        </div>
-    </div>
+    <footer class="f-footer" id="site-footer">
+    </footer>
 </body>

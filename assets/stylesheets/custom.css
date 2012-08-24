@@ -2,54 +2,70 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 9, ../sass/custom.scss */
+/* line 10, ../sass/custom.scss */
 h1 {
   font-size: 200%;
 }
 
-/* line 12, ../sass/custom.scss */
+/* line 13, ../sass/custom.scss */
 h2 {
   font-size: 150%;
 }
 
-/* line 15, ../sass/custom.scss */
+/* line 16, ../sass/custom.scss */
 h3 {
   font-size: 120%;
 }
 
-/* line 18, ../sass/custom.scss */
+/* line 19, ../sass/custom.scss */
 h4 {
   font-size: 100%;
 }
 
-/* line 21, ../sass/custom.scss */
+/* line 22, ../sass/custom.scss */
 h5 {
+  font-size: 90%;
+}
+
+/* line 25, ../sass/custom.scss */
+h6 {
   font-size: 80%;
 }
 
-/* line 24, ../sass/custom.scss */
+/* line 28, ../sass/custom.scss */
 body {
   background-color: #9ceaee;
+  font-size: 16px;
+  height: 100%;
+  padding-top: 60px;
 }
 
-/* line 27, ../sass/custom.scss */
+/* line 37, ../sass/custom.scss */
 nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding: 10px 0;
+}
+/* line 42, ../sass/custom.scss */
+nav .f-block {
+  width: 960px;
+  margin-left: auto!important;
+  margin-right: auto;
   background-color: #4c6c79;
   padding-bottom: 10px;
   padding-top: 10px;
-  margin: 10px auto;
-  width: 960px;
 }
-/* line 33, ../sass/custom.scss */
-nav ul {
+/* line 51, ../sass/custom.scss */
+nav .f-block ul {
   text-align: center;
 }
-/* line 36, ../sass/custom.scss */
-nav ul li.active a {
+/* line 54, ../sass/custom.scss */
+nav .f-block ul li.active a {
   color: #ff927b;
 }
-/* line 39, ../sass/custom.scss */
-nav ul li a {
+/* line 57, ../sass/custom.scss */
+nav .f-block ul li a {
   margin-left: 60px;
   margin-right: 60px;
   color: inherit;
@@ -58,12 +74,42 @@ nav ul li a {
   color: #9ceaee;
 }
 /* line 6, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
-nav ul li a:active, nav ul li a:focus {
+nav .f-block ul li a:active, nav .f-block ul li a:focus {
   outline: none;
 }
 
-/* line 51, ../sass/custom.scss */
+/* line 69, ../sass/custom.scss */
+#site-logo-hello {
+  width: 127px;
+  height: 127px;
+  background-image: url("/assets/images/c.png");
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 79, ../sass/custom.scss */
+#site-logo {
+  width: 229px;
+  height: 152px;
+  background-image: url("/assets/images/b.png");
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+/* line 90, ../sass/custom.scss */
+article {
+  color: #4c6c79;
+  width: 640px;
+  margin: 0 auto;
+}
+
+/* line 95, ../sass/custom.scss */
 #site-footer {
-  background-color: #0d0d0d;
-  color: white;
+  background-image: url("/assets/images/a.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  color: #9ceaee;
 }
