@@ -94,7 +94,7 @@ article blockquote {
 /* line 42, ../sass/markdown.scss */
 article hr {
   display: block;
-  height: 2px;
+  height: 1px;
   border: 0;
   border-top: 1px solid #aaa;
   border-bottom: 1px solid #eee;
