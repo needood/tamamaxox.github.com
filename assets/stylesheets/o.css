@@ -878,32 +878,37 @@ body {
 }
 
 /* line 102, ../sass/custom.scss */
+.f-unit {
+  font-size: 18px;
+}
+
+/* line 105, ../sass/custom.scss */
 article {
-  font-size: 20px;
   color: #4c6c79;
   width: 640px;
   margin: 50px auto;
 }
-/* line 107, ../sass/custom.scss */
+/* line 109, ../sass/custom.scss */
 article h1, article h2 {
+  margin-top: 1.5em;
   text-align: center;
 }
 
-/* line 111, ../sass/custom.scss */
+/* line 114, ../sass/custom.scss */
 .f-main {
   background-image: url("/assets/images/d.png");
   background-position: 50% 102%;
   background-repeat: no-repeat;
 }
 
-/* line 118, ../sass/custom.scss */
+/* line 121, ../sass/custom.scss */
 .f-main-footer {
   background-image: url("/assets/images/a.png");
   background-position: 46% 100%;
   background-repeat: no-repeat;
 }
 
-/* line 126, ../sass/custom.scss */
+/* line 129, ../sass/custom.scss */
 .dropdown.open .dropdown-menu {
   min-width: 100px;
   background-color: #fefefe;
@@ -916,12 +921,12 @@ article h1, article h2 {
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
 }
-/* line 137, ../sass/custom.scss */
+/* line 140, ../sass/custom.scss */
 .dropdown.open .dropdown-menu li {
   border: 0;
   border-bottom: 1px solid #efefef;
 }
-/* line 142, ../sass/custom.scss */
+/* line 145, ../sass/custom.scss */
 .dropdown.open .dropdown-menu li a {
   padding-top: 5px;
   padding-bottom: 5px;

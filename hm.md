@@ -1,3 +1,8 @@
+---
+title: HM 
+layout: page
+---
+
 简历
 ===
 ***
