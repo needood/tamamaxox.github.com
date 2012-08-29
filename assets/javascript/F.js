@@ -4,7 +4,7 @@
 
   libs_path = "/assets/libs/";
 
-  require([libs_path + "jquery-1.8.0.min.js", libs_path + "bootstrap-affix.js"], function() {
+  require(["jquery", libs_path + "bootstrap-affix.js"], function() {
     return $(document).ready(function() {
       return $('.F-main-navbar').affix({
         offset: {
