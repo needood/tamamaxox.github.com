@@ -1,0 +1,265 @@
+/* line 3, ../sass/markdown.scss */
+article a {
+  color: #0645ad;
+  text-decoration: none;
+}
+/* line 4, ../sass/markdown.scss */
+article a:visited {
+  color: #0b0080;
+}
+/* line 5, ../sass/markdown.scss */
+article a:hover {
+  color: #06e;
+}
+/* line 6, ../sass/markdown.scss */
+article a:active {
+  color: #faa700;
+}
+/* line 7, ../sass/markdown.scss */
+article a:focus {
+  outline: thin dotted;
+}
+/* line 8, ../sass/markdown.scss */
+article a:hover, article a:active {
+  outline: 0;
+}
+/* line 10, ../sass/markdown.scss */
+article ::-moz-selection {
+  background: rgba(255, 255, 0, 0.3);
+  color: #000;
+}
+/* line 11, ../sass/markdown.scss */
+article ::selection {
+  background: rgba(255, 255, 0, 0.3);
+  color: #000;
+}
+/* line 13, ../sass/markdown.scss */
+article a::-moz-selection {
+  background: rgba(255, 255, 0, 0.3);
+  color: #0645ad;
+}
+/* line 14, ../sass/markdown.scss */
+article a::selection {
+  background: rgba(255, 255, 0, 0.3);
+  color: #0645ad;
+}
+/* line 16, ../sass/markdown.scss */
+article p {
+  margin: 1em 0;
+}
+/* line 20, ../sass/markdown.scss */
+article img {
+  max-width: 100%;
+}
+/* line 24, ../sass/markdown.scss */
+article h1, article h2, article h3, article h4, article h5, article h6 {
+  font-weight: normal;
+  line-height: 1em;
+}
+/* line 28, ../sass/markdown.scss */
+article h4, article h5, article h6 {
+  font-weight: bold;
+}
+/* line 29, ../sass/markdown.scss */
+article h1 {
+  font-size: 2.5em;
+}
+/* line 30, ../sass/markdown.scss */
+article h2 {
+  font-size: 2em;
+}
+/* line 31, ../sass/markdown.scss */
+article h3 {
+  font-size: 1.5em;
+}
+/* line 32, ../sass/markdown.scss */
+article h4 {
+  font-size: 1.2em;
+}
+/* line 33, ../sass/markdown.scss */
+article h5 {
+  font-size: 1em;
+}
+/* line 34, ../sass/markdown.scss */
+article h6 {
+  font-size: 0.9em;
+}
+/* line 36, ../sass/markdown.scss */
+article blockquote {
+  color: #666666;
+  margin: 0;
+  padding-left: 3em;
+  border-left: 0.5em #ccc solid;
+}
+/* line 42, ../sass/markdown.scss */
+article hr {
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #eee;
+  margin: 1em 0;
+  padding: 0;
+}
+/* line 43, ../sass/markdown.scss */
+article pre, article code, article kbd, article samp {
+  color: #000;
+  font-family: monospace, monospace;
+  _font-family: 'courier new', monospace;
+  font-size: 0.98em;
+}
+/* line 44, ../sass/markdown.scss */
+article pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/* line 45, ../sass/markdown.scss */
+article code {
+  margin: 0 8px;
+  padding: 2px 8px 0px 8px;
+  display: inline-block;
+  border: 2px dotted #ccc;
+}
+/* line 47, ../sass/markdown.scss */
+article b, article strong {
+  font-weight: bold;
+}
+/* line 49, ../sass/markdown.scss */
+article dfn {
+  font-style: italic;
+}
+/* line 51, ../sass/markdown.scss */
+article ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+/* line 53, ../sass/markdown.scss */
+article mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+/* line 55, ../sass/markdown.scss */
+article sub, article sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+/* line 56, ../sass/markdown.scss */
+article sup {
+  top: -0.5em;
+}
+/* line 57, ../sass/markdown.scss */
+article sub {
+  bottom: -0.25em;
+}
+/* line 59, ../sass/markdown.scss */
+article ul, article ol {
+  margin: 1em 0;
+  padding: 0 0 0 2em;
+}
+/* line 60, ../sass/markdown.scss */
+article li p:last-child {
+  margin: 0;
+}
+/* line 61, ../sass/markdown.scss */
+article dd {
+  margin: 0 0 0 2em;
+}
+/* line 63, ../sass/markdown.scss */
+article img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+/* line 65, ../sass/markdown.scss */
+article table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 66, ../sass/markdown.scss */
+article td {
+  vertical-align: top;
+}
+@media only screen and (min-width: 480px) {
+  /* line 69, ../sass/markdown.scss */
+  article body {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 73, ../sass/markdown.scss */
+  article body {
+    font-size: 16px;
+  }
+}
+@media print {
+  /* line 1, ../sass/markdown.scss */
+  article {
+    @page {
+      margin: 0.5cm;
+}
+
+  }
+  /* line 77, ../sass/markdown.scss */
+  article * {
+    background: transparent !important;
+    color: black !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+  /* line 78, ../sass/markdown.scss */
+  article body {
+    font-size: 12pt;
+    max-width: 100%;
+  }
+  /* line 79, ../sass/markdown.scss */
+  article a, article a:visited {
+    text-decoration: underline;
+  }
+  /* line 80, ../sass/markdown.scss */
+  article hr {
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid black;
+  }
+  /* line 81, ../sass/markdown.scss */
+  article a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  /* line 82, ../sass/markdown.scss */
+  article abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /* line 83, ../sass/markdown.scss */
+  article .ir a:after, article a[href^="javascript:"]:after, article a[href^="#"]:after {
+    content: "";
+  }
+  /* line 84, ../sass/markdown.scss */
+  article pre, article blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+  /* line 85, ../sass/markdown.scss */
+  article tr, article img {
+    page-break-inside: avoid;
+  }
+  /* line 86, ../sass/markdown.scss */
+  article img {
+    max-width: 100% !important;
+  }
+  /* line 88, ../sass/markdown.scss */
+  article p, article h2, article h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  /* line 89, ../sass/markdown.scss */
+  article h2, article h3 {
+    page-break-after: avoid;
+  }
+}
