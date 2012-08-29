@@ -4,8 +4,9 @@
 
   libs_path = "/assets/libs/";
 
-  require(["jquery", libs_path + "bootstrap-affix.js"], function() {
+  require(["jquery", libs_path + "bootstrap-affix.js", libs_path + "bootstrap-dropdown.js"], function() {
     return $(document).ready(function() {
+      $('.dropdown-toggle').dropdown();
       return $('.F-main-navbar').affix({
         offset: {
           top: $('.F-main-navbar').offset().top

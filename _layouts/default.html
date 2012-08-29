@@ -20,9 +20,17 @@
 						{% assign pages_list = site.pages %}
 						{% assign group = 'navigation' %}
 						{% include F/pages_list %}
-						{% assign pages_list = site.pages %}
-						{% assign group = 'F' %}
-						{% include F/pages_list %}
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" id="F-test" href="#">测试
+							<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="F-test">
+								{% assign pages_list = site.pages %}
+								{% assign group = 'F' %}
+								{% include F/pages_list %}
+							</ul>
+						</li>
+
 					</ul>
 				</div>
 			</div>

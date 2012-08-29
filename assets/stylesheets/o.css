@@ -114,15 +114,27 @@ body.f-on-navbar .f-main-navbar- .f-main-navbar.affix {
   position: fixed;
 }
 
-/* line 68, ../sass/F.scss */
+/* line 67, ../sass/F.scss */
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: top;
+  border-top-width: 4px;
+  border-top-style: solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+}
+
+/* line 83, ../sass/F.scss */
 .f-inline-block {
   margin: 0;
   padding: 0;
   border: 0;
-  overflow: hidden;
   *zoom: 1;
 }
-/* line 49, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-block-list.scss */
+/* line 88, ../sass/F.scss */
 .f-inline-block li {
   list-style-image: none;
   list-style-type: none;
@@ -136,22 +148,22 @@ body.f-on-navbar .f-main-navbar- .f-main-navbar.affix {
   white-space: nowrap;
 }
 
-/* line 72, ../sass/F.scss */
+/* line 102, ../sass/F.scss */
 .f-unit {
   padding: 10px 10px 10px 10px;
 }
 
-/* line 77, ../sass/F.scss */
+/* line 107, ../sass/F.scss */
 .clearfix, .row, .thumbnails, .row-fluid {
   *zoom: 1;
 }
-/* line 79, ../sass/F.scss */
+/* line 109, ../sass/F.scss */
 .clearfix:before, .row:before, .thumbnails:before, .row-fluid:before {
   display: table;
   content: "";
   line-height: 0;
 }
-/* line 84, ../sass/F.scss */
+/* line 114, ../sass/F.scss */
 .clearfix:after, .row:after, .thumbnails:after, .row-fluid:after {
   display: table;
   content: "";
@@ -159,19 +171,19 @@ body.f-on-navbar .f-main-navbar- .f-main-navbar.affix {
   clear: both;
 }
 
-/* line 92, ../sass/F.scss */
-.float-left, .span, .span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12, .row-fluid-span, .row-fluid .span1, .row-fluid .span2, .row-fluid .span3, .row-fluid .span4, .row-fluid .span5, .row-fluid .span6, .row-fluid .span7, .row-fluid .span8, .row-fluid .span9, .row-fluid .span10, .row-fluid .span11, .row-fluid .span12 {
+/* line 122, ../sass/F.scss */
+.pull-left, .span, .span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12, .row-fluid-span, .row-fluid .span1, .row-fluid .span2, .row-fluid .span3, .row-fluid .span4, .row-fluid .span5, .row-fluid .span6, .row-fluid .span7, .row-fluid .span8, .row-fluid .span9, .row-fluid .span10, .row-fluid .span11, .row-fluid .span12 {
   float: left;
 }
 
-/* line 99, ../sass/F.scss */
+/* line 129, ../sass/F.scss */
 .text-overflow {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-/* line 105, ../sass/F.scss */
+/* line 135, ../sass/F.scss */
 .hide-text {
   font: 0/0 a;
   color: transparent;
@@ -180,359 +192,391 @@ body.f-on-navbar .f-main-navbar- .f-main-navbar.affix {
   border: 0;
 }
 
-/* line 116, ../sass/F.scss */
+/* line 146, ../sass/F.scss */
 .row, .thumbnails {
   margin-left: -20px;
 }
 
-/* line 120, ../sass/F.scss */
+/* line 150, ../sass/F.scss */
 .row-fluid {
   width: 100%;
 }
-/* line 123, ../sass/F.scss */
+/* line 153, ../sass/F.scss */
 .row-fluid .thumbnails {
   margin-left: 0px;
 }
 
-/* line 129, ../sass/F.scss */
+/* line 159, ../sass/F.scss */
 .span.pull-right, .pull-right.span1, .pull-right.span2, .pull-right.span3, .pull-right.span4, .pull-right.span5, .pull-right.span6, .pull-right.span7, .pull-right.span8, .pull-right.span9, .pull-right.span10, .pull-right.span11, .pull-right.span12 {
   float: right;
 }
-/* line 132, ../sass/F.scss */
+/* line 162, ../sass/F.scss */
 .span.hide, .hide.span1, .hide.span2, .hide.span3, .hide.span4, .hide.span5, .hide.span6, .hide.span7, .hide.span8, .hide.span9, .hide.span10, .hide.span11, .hide.span12 {
   display: none;
 }
 
-/* line 136, ../sass/F.scss */
+/* line 166, ../sass/F.scss */
 .row-fluid-span, .row-fluid .span1, .row-fluid .span2, .row-fluid .span3, .row-fluid .span4, .row-fluid .span5, .row-fluid .span6, .row-fluid .span7, .row-fluid .span8, .row-fluid .span9, .row-fluid .span10, .row-fluid .span11, .row-fluid .span12 {
   display: block;
   min-height: 30px;
 }
-/* line 140, ../sass/F.scss */
+/* line 170, ../sass/F.scss */
 .row-fluid-span:first-child, .row-fluid .span1:first-child, .row-fluid .span2:first-child, .row-fluid .span3:first-child, .row-fluid .span4:first-child, .row-fluid .span5:first-child, .row-fluid .span6:first-child, .row-fluid .span7:first-child, .row-fluid .span8:first-child, .row-fluid .span9:first-child, .row-fluid .span10:first-child, .row-fluid .span11:first-child, .row-fluid .span12:first-child {
   margin-left: 0;
 }
 
-/* line 145, ../sass/F.scss */
+/* line 175, ../sass/F.scss */
 .span1 {
   margin-left: 20px;
   width: 80 - 20px;
 }
 
-/* line 150, ../sass/F.scss */
+/* line 180, ../sass/F.scss */
 .offset1 {
   margin-left: 60 + 20px;
 }
 
-/* line 154, ../sass/F.scss */
+/* line 184, ../sass/F.scss */
 .row-fluid .span1 {
   margin-left: 2.128%;
   width: 6.383%;
 }
-/* line 159, ../sass/F.scss */
+/* line 189, ../sass/F.scss */
 .row-fluid .offset1 {
   margin-left: 10.638%;
 }
-/* line 161, ../sass/F.scss */
+/* line 191, ../sass/F.scss */
 .row-fluid .offset1:first-child {
   margin-left: 8.511%;
 }
 
-/* line 145, ../sass/F.scss */
+/* line 175, ../sass/F.scss */
 .span2 {
   margin-left: 20px;
   width: 160 - 20px;
 }
 
-/* line 150, ../sass/F.scss */
+/* line 180, ../sass/F.scss */
 .offset2 {
   margin-left: 120 + 20px;
 }
 
-/* line 154, ../sass/F.scss */
+/* line 184, ../sass/F.scss */
 .row-fluid .span2 {
   margin-left: 2.128%;
   width: 14.894%;
 }
-/* line 159, ../sass/F.scss */
+/* line 189, ../sass/F.scss */
 .row-fluid .offset2 {
   margin-left: 19.149%;
 }
-/* line 161, ../sass/F.scss */
+/* line 191, ../sass/F.scss */
 .row-fluid .offset2:first-child {
   margin-left: 17.021%;
 }
 
-/* line 145, ../sass/F.scss */
+/* line 175, ../sass/F.scss */
 .span3 {
   margin-left: 20px;
   width: 240 - 20px;
 }
 
-/* line 150, ../sass/F.scss */
+/* line 180, ../sass/F.scss */
 .offset3 {
   margin-left: 180 + 20px;
 }
 
-/* line 154, ../sass/F.scss */
+/* line 184, ../sass/F.scss */
 .row-fluid .span3 {
   margin-left: 2.128%;
   width: 23.404%;
 }
-/* line 159, ../sass/F.scss */
+/* line 189, ../sass/F.scss */
 .row-fluid .offset3 {
   margin-left: 27.66%;
 }
-/* line 161, ../sass/F.scss */
+/* line 191, ../sass/F.scss */
 .row-fluid .offset3:first-child {
   margin-left: 25.532%;
 }
 
-/* line 145, ../sass/F.scss */
+/* line 175, ../sass/F.scss */
 .span4 {
   margin-left: 20px;
   width: 320 - 20px;
 }
 
-/* line 150, ../sass/F.scss */
+/* line 180, ../sass/F.scss */
 .offset4 {
   margin-left: 240 + 20px;
 }
 
-/* line 154, ../sass/F.scss */
+/* line 184, ../sass/F.scss */
 .row-fluid .span4 {
   margin-left: 2.128%;
   width: 31.915%;
 }
-/* line 159, ../sass/F.scss */
+/* line 189, ../sass/F.scss */
 .row-fluid .offset4 {
   margin-left: 36.17%;
 }
-/* line 161, ../sass/F.scss */
+/* line 191, ../sass/F.scss */
 .row-fluid .offset4:first-child {
   margin-left: 34.043%;
 }
 
-/* line 145, ../sass/F.scss */
+/* line 175, ../sass/F.scss */
 .span5 {
   margin-left: 20px;
   width: 400 - 20px;
 }
 
-/* line 150, ../sass/F.scss */
+/* line 180, ../sass/F.scss */
 .offset5 {
   margin-left: 300 + 20px;
 }
 
-/* line 154, ../sass/F.scss */
+/* line 184, ../sass/F.scss */
 .row-fluid .span5 {
   margin-left: 2.128%;
   width: 40.426%;
 }
-/* line 159, ../sass/F.scss */
+/* line 189, ../sass/F.scss */
 .row-fluid .offset5 {
   margin-left: 44.681%;
 }
-/* line 161, ../sass/F.scss */
+/* line 191, ../sass/F.scss */
 .row-fluid .offset5:first-child {
   margin-left: 42.553%;
 }
 
-/* line 145, ../sass/F.scss */
+/* line 175, ../sass/F.scss */
 .span6 {
   margin-left: 20px;
   width: 480 - 20px;
 }
 
-/* line 150, ../sass/F.scss */
+/* line 180, ../sass/F.scss */
 .offset6 {
   margin-left: 360 + 20px;
 }
 
-/* line 154, ../sass/F.scss */
+/* line 184, ../sass/F.scss */
 .row-fluid .span6 {
   margin-left: 2.128%;
   width: 48.936%;
 }
-/* line 159, ../sass/F.scss */
+/* line 189, ../sass/F.scss */
 .row-fluid .offset6 {
   margin-left: 53.191%;
 }
-/* line 161, ../sass/F.scss */
+/* line 191, ../sass/F.scss */
 .row-fluid .offset6:first-child {
   margin-left: 51.064%;
 }
 
-/* line 145, ../sass/F.scss */
+/* line 175, ../sass/F.scss */
 .span7 {
   margin-left: 20px;
   width: 560 - 20px;
 }
 
-/* line 150, ../sass/F.scss */
+/* line 180, ../sass/F.scss */
 .offset7 {
   margin-left: 420 + 20px;
 }
 
-/* line 154, ../sass/F.scss */
+/* line 184, ../sass/F.scss */
 .row-fluid .span7 {
   margin-left: 2.128%;
   width: 57.447%;
 }
-/* line 159, ../sass/F.scss */
+/* line 189, ../sass/F.scss */
 .row-fluid .offset7 {
   margin-left: 61.702%;
 }
-/* line 161, ../sass/F.scss */
+/* line 191, ../sass/F.scss */
 .row-fluid .offset7:first-child {
   margin-left: 59.574%;
 }
 
-/* line 145, ../sass/F.scss */
+/* line 175, ../sass/F.scss */
 .span8 {
   margin-left: 20px;
   width: 640 - 20px;
 }
 
-/* line 150, ../sass/F.scss */
+/* line 180, ../sass/F.scss */
 .offset8 {
   margin-left: 480 + 20px;
 }
 
-/* line 154, ../sass/F.scss */
+/* line 184, ../sass/F.scss */
 .row-fluid .span8 {
   margin-left: 2.128%;
   width: 65.957%;
 }
-/* line 159, ../sass/F.scss */
+/* line 189, ../sass/F.scss */
 .row-fluid .offset8 {
   margin-left: 70.213%;
 }
-/* line 161, ../sass/F.scss */
+/* line 191, ../sass/F.scss */
 .row-fluid .offset8:first-child {
   margin-left: 68.085%;
 }
 
-/* line 145, ../sass/F.scss */
+/* line 175, ../sass/F.scss */
 .span9 {
   margin-left: 20px;
   width: 720 - 20px;
 }
 
-/* line 150, ../sass/F.scss */
+/* line 180, ../sass/F.scss */
 .offset9 {
   margin-left: 540 + 20px;
 }
 
-/* line 154, ../sass/F.scss */
+/* line 184, ../sass/F.scss */
 .row-fluid .span9 {
   margin-left: 2.128%;
   width: 74.468%;
 }
-/* line 159, ../sass/F.scss */
+/* line 189, ../sass/F.scss */
 .row-fluid .offset9 {
   margin-left: 78.723%;
 }
-/* line 161, ../sass/F.scss */
+/* line 191, ../sass/F.scss */
 .row-fluid .offset9:first-child {
   margin-left: 76.596%;
 }
 
-/* line 145, ../sass/F.scss */
+/* line 175, ../sass/F.scss */
 .span10 {
   margin-left: 20px;
   width: 800 - 20px;
 }
 
-/* line 150, ../sass/F.scss */
+/* line 180, ../sass/F.scss */
 .offset10 {
   margin-left: 600 + 20px;
 }
 
-/* line 154, ../sass/F.scss */
+/* line 184, ../sass/F.scss */
 .row-fluid .span10 {
   margin-left: 2.128%;
   width: 82.979%;
 }
-/* line 159, ../sass/F.scss */
+/* line 189, ../sass/F.scss */
 .row-fluid .offset10 {
   margin-left: 87.234%;
 }
-/* line 161, ../sass/F.scss */
+/* line 191, ../sass/F.scss */
 .row-fluid .offset10:first-child {
   margin-left: 85.106%;
 }
 
-/* line 145, ../sass/F.scss */
+/* line 175, ../sass/F.scss */
 .span11 {
   margin-left: 20px;
   width: 880 - 20px;
 }
 
-/* line 150, ../sass/F.scss */
+/* line 180, ../sass/F.scss */
 .offset11 {
   margin-left: 660 + 20px;
 }
 
-/* line 154, ../sass/F.scss */
+/* line 184, ../sass/F.scss */
 .row-fluid .span11 {
   margin-left: 2.128%;
   width: 91.489%;
 }
-/* line 159, ../sass/F.scss */
+/* line 189, ../sass/F.scss */
 .row-fluid .offset11 {
   margin-left: 95.745%;
 }
-/* line 161, ../sass/F.scss */
+/* line 191, ../sass/F.scss */
 .row-fluid .offset11:first-child {
   margin-left: 93.617%;
 }
 
-/* line 145, ../sass/F.scss */
+/* line 175, ../sass/F.scss */
 .span12 {
   margin-left: 20px;
   width: 960 - 20px;
 }
 
-/* line 150, ../sass/F.scss */
+/* line 180, ../sass/F.scss */
 .offset12 {
   margin-left: 720 + 20px;
 }
 
-/* line 154, ../sass/F.scss */
+/* line 184, ../sass/F.scss */
 .row-fluid .span12 {
   margin-left: 2.128%;
   width: 100%;
 }
-/* line 159, ../sass/F.scss */
+/* line 189, ../sass/F.scss */
 .row-fluid .offset12 {
   margin-left: 104.255%;
 }
-/* line 161, ../sass/F.scss */
+/* line 191, ../sass/F.scss */
 .row-fluid .offset12:first-child {
   margin-left: 102.128%;
 }
 
-/* line 178, ../sass/F.scss */
+/* line 208, ../sass/F.scss */
 .thumbnails li {
   float: left;
   margin-bottom: 20px;
   margin-left: 20px;
 }
 
-/* line 186, ../sass/F.scss */
+/* line 216, ../sass/F.scss */
 .thumbnail {
   display: block;
   padding: 4px;
   line-height: 20px;
 }
 
-/* line 192, ../sass/F.scss */
+/* line 222, ../sass/F.scss */
 .thumbnail img {
   display: block;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* line 237, ../sass/F.scss */
+.dropdown {
+  position: relative;
+}
+/* line 238, ../sass/F.scss */
+.dropdown .caret {
+  margin-top: 8px;
+  margin-left: 2px;
+}
+/* line 245, ../sass/F.scss */
+.dropdown.open {
+  *z-index: 1000;
+}
+/* line 247, ../sass/F.scss */
+.dropdown.open .dropdown-menu {
+  display: block!important;
+}
+/* line 251, ../sass/F.scss */
+.dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+}
+/* line 258, ../sass/F.scss */
+.dropdown .dropdown-menu a {
+  display: block;
+  clear: both;
 }
 
 /* line 6, ../sass/markdown.scss */
@@ -727,591 +771,54 @@ article td {
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 22, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
-/* line 13, ../sass/F.scss */
-html {
-  height: 100%;
-}
-
-/* line 20, ../sass/F.scss */
-body.f-on-footer {
-  height: 100%;
-}
-/* line 22, ../sass/F.scss */
-body.f-on-footer .f-main {
-  clear: both;
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin-bottom: -170px;
-}
-/* line 28, ../sass/F.scss */
-body.f-on-footer .f-main .f-main-footer- {
-  height: 170px;
-}
-/* line 32, ../sass/F.scss */
-body.f-on-footer .f-main-footer {
-  clear: both;
-  position: relative;
-  height: 170px;
-}
-/* line 38, ../sass/F.scss */
-body.f-on-footer.f-top-footer .f-main {
-  margin-bottom: 0px;
-}
-/* line 41, ../sass/F.scss */
-body.f-on-footer.f-top-footer .f-main-footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0px;
-}
-/* line 50, ../sass/F.scss */
-body.f-on-navbar .f-main-navbar- {
-  height: 50px;
-}
-/* line 51, ../sass/F.scss */
-body.f-on-navbar .f-main-navbar- .f-main-navbar {
-  height: 50px;
-}
-/* line 52, ../sass/F.scss */
-body.f-on-navbar .f-main-navbar- .f-main-navbar.affix {
-  top: 0px;
-  position: fixed;
-}
-
-/* line 68, ../sass/F.scss */
-.f-inline-block {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
-  *zoom: 1;
-}
-/* line 49, ../../../../../var/lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-block-list.scss */
-.f-inline-block li {
-  list-style-image: none;
-  list-style-type: none;
-  margin-left: 0;
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
-  white-space: nowrap;
-}
-
-/* line 72, ../sass/F.scss */
-.f-unit {
-  padding: 10px 10px 10px 10px;
-}
-
-/* line 77, ../sass/F.scss */
-.clearfix, .row, .thumbnails, .row-fluid {
-  *zoom: 1;
-}
-/* line 79, ../sass/F.scss */
-.clearfix:before, .row:before, .thumbnails:before, .row-fluid:before {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-/* line 84, ../sass/F.scss */
-.clearfix:after, .row:after, .thumbnails:after, .row-fluid:after {
-  display: table;
-  content: "";
-  line-height: 0;
-  clear: both;
-}
-
-/* line 92, ../sass/F.scss */
-.float-left, .span, .span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12, .row-fluid-span, .row-fluid .span1, .row-fluid .span2, .row-fluid .span3, .row-fluid .span4, .row-fluid .span5, .row-fluid .span6, .row-fluid .span7, .row-fluid .span8, .row-fluid .span9, .row-fluid .span10, .row-fluid .span11, .row-fluid .span12 {
-  float: left;
-}
-
-/* line 99, ../sass/F.scss */
-.text-overflow {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-/* line 105, ../sass/F.scss */
-.hide-text {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
-
-/* line 116, ../sass/F.scss */
-.row, .thumbnails {
-  margin-left: -20px;
-}
-
-/* line 120, ../sass/F.scss */
-.row-fluid {
-  width: 100%;
-}
-/* line 123, ../sass/F.scss */
-.row-fluid .thumbnails {
-  margin-left: 0px;
-}
-
-/* line 129, ../sass/F.scss */
-.span.pull-right, .pull-right.span1, .pull-right.span2, .pull-right.span3, .pull-right.span4, .pull-right.span5, .pull-right.span6, .pull-right.span7, .pull-right.span8, .pull-right.span9, .pull-right.span10, .pull-right.span11, .pull-right.span12 {
-  float: right;
-}
-/* line 132, ../sass/F.scss */
-.span.hide, .hide.span1, .hide.span2, .hide.span3, .hide.span4, .hide.span5, .hide.span6, .hide.span7, .hide.span8, .hide.span9, .hide.span10, .hide.span11, .hide.span12 {
-  display: none;
-}
-
-/* line 136, ../sass/F.scss */
-.row-fluid-span, .row-fluid .span1, .row-fluid .span2, .row-fluid .span3, .row-fluid .span4, .row-fluid .span5, .row-fluid .span6, .row-fluid .span7, .row-fluid .span8, .row-fluid .span9, .row-fluid .span10, .row-fluid .span11, .row-fluid .span12 {
-  display: block;
-  min-height: 30px;
-}
-/* line 140, ../sass/F.scss */
-.row-fluid-span:first-child, .row-fluid .span1:first-child, .row-fluid .span2:first-child, .row-fluid .span3:first-child, .row-fluid .span4:first-child, .row-fluid .span5:first-child, .row-fluid .span6:first-child, .row-fluid .span7:first-child, .row-fluid .span8:first-child, .row-fluid .span9:first-child, .row-fluid .span10:first-child, .row-fluid .span11:first-child, .row-fluid .span12:first-child {
-  margin-left: 0;
-}
-
-/* line 145, ../sass/F.scss */
-.span1 {
-  margin-left: 20px;
-  width: 80 - 20px;
-}
-
-/* line 150, ../sass/F.scss */
-.offset1 {
-  margin-left: 60 + 20px;
-}
-
-/* line 154, ../sass/F.scss */
-.row-fluid .span1 {
-  margin-left: 2.128%;
-  width: 6.383%;
-}
-/* line 159, ../sass/F.scss */
-.row-fluid .offset1 {
-  margin-left: 10.638%;
-}
-/* line 161, ../sass/F.scss */
-.row-fluid .offset1:first-child {
-  margin-left: 8.511%;
-}
-
-/* line 145, ../sass/F.scss */
-.span2 {
-  margin-left: 20px;
-  width: 160 - 20px;
-}
-
-/* line 150, ../sass/F.scss */
-.offset2 {
-  margin-left: 120 + 20px;
-}
-
-/* line 154, ../sass/F.scss */
-.row-fluid .span2 {
-  margin-left: 2.128%;
-  width: 14.894%;
-}
-/* line 159, ../sass/F.scss */
-.row-fluid .offset2 {
-  margin-left: 19.149%;
-}
-/* line 161, ../sass/F.scss */
-.row-fluid .offset2:first-child {
-  margin-left: 17.021%;
-}
-
-/* line 145, ../sass/F.scss */
-.span3 {
-  margin-left: 20px;
-  width: 240 - 20px;
-}
-
-/* line 150, ../sass/F.scss */
-.offset3 {
-  margin-left: 180 + 20px;
-}
-
-/* line 154, ../sass/F.scss */
-.row-fluid .span3 {
-  margin-left: 2.128%;
-  width: 23.404%;
-}
-/* line 159, ../sass/F.scss */
-.row-fluid .offset3 {
-  margin-left: 27.66%;
-}
-/* line 161, ../sass/F.scss */
-.row-fluid .offset3:first-child {
-  margin-left: 25.532%;
-}
-
-/* line 145, ../sass/F.scss */
-.span4 {
-  margin-left: 20px;
-  width: 320 - 20px;
-}
-
-/* line 150, ../sass/F.scss */
-.offset4 {
-  margin-left: 240 + 20px;
-}
-
-/* line 154, ../sass/F.scss */
-.row-fluid .span4 {
-  margin-left: 2.128%;
-  width: 31.915%;
-}
-/* line 159, ../sass/F.scss */
-.row-fluid .offset4 {
-  margin-left: 36.17%;
-}
-/* line 161, ../sass/F.scss */
-.row-fluid .offset4:first-child {
-  margin-left: 34.043%;
-}
-
-/* line 145, ../sass/F.scss */
-.span5 {
-  margin-left: 20px;
-  width: 400 - 20px;
-}
-
-/* line 150, ../sass/F.scss */
-.offset5 {
-  margin-left: 300 + 20px;
-}
-
-/* line 154, ../sass/F.scss */
-.row-fluid .span5 {
-  margin-left: 2.128%;
-  width: 40.426%;
-}
-/* line 159, ../sass/F.scss */
-.row-fluid .offset5 {
-  margin-left: 44.681%;
-}
-/* line 161, ../sass/F.scss */
-.row-fluid .offset5:first-child {
-  margin-left: 42.553%;
-}
-
-/* line 145, ../sass/F.scss */
-.span6 {
-  margin-left: 20px;
-  width: 480 - 20px;
-}
-
-/* line 150, ../sass/F.scss */
-.offset6 {
-  margin-left: 360 + 20px;
-}
-
-/* line 154, ../sass/F.scss */
-.row-fluid .span6 {
-  margin-left: 2.128%;
-  width: 48.936%;
-}
-/* line 159, ../sass/F.scss */
-.row-fluid .offset6 {
-  margin-left: 53.191%;
-}
-/* line 161, ../sass/F.scss */
-.row-fluid .offset6:first-child {
-  margin-left: 51.064%;
-}
-
-/* line 145, ../sass/F.scss */
-.span7 {
-  margin-left: 20px;
-  width: 560 - 20px;
-}
-
-/* line 150, ../sass/F.scss */
-.offset7 {
-  margin-left: 420 + 20px;
-}
-
-/* line 154, ../sass/F.scss */
-.row-fluid .span7 {
-  margin-left: 2.128%;
-  width: 57.447%;
-}
-/* line 159, ../sass/F.scss */
-.row-fluid .offset7 {
-  margin-left: 61.702%;
-}
-/* line 161, ../sass/F.scss */
-.row-fluid .offset7:first-child {
-  margin-left: 59.574%;
-}
-
-/* line 145, ../sass/F.scss */
-.span8 {
-  margin-left: 20px;
-  width: 640 - 20px;
-}
-
-/* line 150, ../sass/F.scss */
-.offset8 {
-  margin-left: 480 + 20px;
-}
-
-/* line 154, ../sass/F.scss */
-.row-fluid .span8 {
-  margin-left: 2.128%;
-  width: 65.957%;
-}
-/* line 159, ../sass/F.scss */
-.row-fluid .offset8 {
-  margin-left: 70.213%;
-}
-/* line 161, ../sass/F.scss */
-.row-fluid .offset8:first-child {
-  margin-left: 68.085%;
-}
-
-/* line 145, ../sass/F.scss */
-.span9 {
-  margin-left: 20px;
-  width: 720 - 20px;
-}
-
-/* line 150, ../sass/F.scss */
-.offset9 {
-  margin-left: 540 + 20px;
-}
-
-/* line 154, ../sass/F.scss */
-.row-fluid .span9 {
-  margin-left: 2.128%;
-  width: 74.468%;
-}
-/* line 159, ../sass/F.scss */
-.row-fluid .offset9 {
-  margin-left: 78.723%;
-}
-/* line 161, ../sass/F.scss */
-.row-fluid .offset9:first-child {
-  margin-left: 76.596%;
-}
-
-/* line 145, ../sass/F.scss */
-.span10 {
-  margin-left: 20px;
-  width: 800 - 20px;
-}
-
-/* line 150, ../sass/F.scss */
-.offset10 {
-  margin-left: 600 + 20px;
-}
-
-/* line 154, ../sass/F.scss */
-.row-fluid .span10 {
-  margin-left: 2.128%;
-  width: 82.979%;
-}
-/* line 159, ../sass/F.scss */
-.row-fluid .offset10 {
-  margin-left: 87.234%;
-}
-/* line 161, ../sass/F.scss */
-.row-fluid .offset10:first-child {
-  margin-left: 85.106%;
-}
-
-/* line 145, ../sass/F.scss */
-.span11 {
-  margin-left: 20px;
-  width: 880 - 20px;
-}
-
-/* line 150, ../sass/F.scss */
-.offset11 {
-  margin-left: 660 + 20px;
-}
-
-/* line 154, ../sass/F.scss */
-.row-fluid .span11 {
-  margin-left: 2.128%;
-  width: 91.489%;
-}
-/* line 159, ../sass/F.scss */
-.row-fluid .offset11 {
-  margin-left: 95.745%;
-}
-/* line 161, ../sass/F.scss */
-.row-fluid .offset11:first-child {
-  margin-left: 93.617%;
-}
-
-/* line 145, ../sass/F.scss */
-.span12 {
-  margin-left: 20px;
-  width: 960 - 20px;
-}
-
-/* line 150, ../sass/F.scss */
-.offset12 {
-  margin-left: 720 + 20px;
-}
-
-/* line 154, ../sass/F.scss */
-.row-fluid .span12 {
-  margin-left: 2.128%;
-  width: 100%;
-}
-/* line 159, ../sass/F.scss */
-.row-fluid .offset12 {
-  margin-left: 104.255%;
-}
-/* line 161, ../sass/F.scss */
-.row-fluid .offset12:first-child {
-  margin-left: 102.128%;
-}
-
-/* line 178, ../sass/F.scss */
-.thumbnails li {
-  float: left;
-  margin-bottom: 20px;
-  margin-left: 20px;
-}
-
-/* line 186, ../sass/F.scss */
-.thumbnail {
-  display: block;
-  padding: 4px;
-  line-height: 20px;
-}
-
-/* line 192, ../sass/F.scss */
-.thumbnail img {
-  display: block;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 11, ../sass/custom.scss */
+/* line 12, ../sass/custom.scss */
 h1 {
   font-size: 200%;
 }
 
-/* line 14, ../sass/custom.scss */
+/* line 15, ../sass/custom.scss */
 h2 {
   font-size: 150%;
 }
 
-/* line 17, ../sass/custom.scss */
+/* line 18, ../sass/custom.scss */
 h3 {
   font-size: 120%;
 }
 
-/* line 20, ../sass/custom.scss */
+/* line 21, ../sass/custom.scss */
 h4 {
   font-size: 100%;
 }
 
-/* line 23, ../sass/custom.scss */
+/* line 24, ../sass/custom.scss */
 h5 {
   font-size: 90%;
 }
 
-/* line 26, ../sass/custom.scss */
+/* line 27, ../sass/custom.scss */
 h6 {
   font-size: 80%;
 }
 
-/* line 29, ../sass/custom.scss */
+/* line 30, ../sass/custom.scss */
 body {
   background-color: #9ceaee;
   font-size: 16px;
 }
 
-/* line 35, ../sass/custom.scss */
+/* line 36, ../sass/custom.scss */
 .f-main-navbar- {
   margin-top: 10px;
 }
 
-/* line 40, ../sass/custom.scss */
+/* line 41, ../sass/custom.scss */
 .f-main-navbar {
   width: 100%;
   background-color: #9ceaee;
   padding-top: 10px;
 }
-/* line 46, ../sass/custom.scss */
+/* line 47, ../sass/custom.scss */
 .f-main-navbar .f-block {
   height: 100%;
   width: 100%;
@@ -1319,20 +826,20 @@ body {
   margin-right: auto;
   background-color: #4c6c79;
 }
-/* line 54, ../sass/custom.scss */
+/* line 55, ../sass/custom.scss */
 .f-main-navbar .f-block ul {
   text-align: center;
 }
-/* line 57, ../sass/custom.scss */
+/* line 58, ../sass/custom.scss */
 .f-main-navbar .f-block ul li.active a {
   color: #ff927b;
 }
-/* line 60, ../sass/custom.scss */
+/* line 61, ../sass/custom.scss */
 .f-main-navbar .f-block ul li a {
   display: block;
   padding-top: 15px;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 50px;
+  margin-right: 50px;
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
@@ -1343,19 +850,19 @@ body {
   outline: none;
 }
 
-/* line 74, ../sass/custom.scss */
+/* line 75, ../sass/custom.scss */
 .f-unit {
   font-size: 22px;
 }
 
-/* line 77, ../sass/custom.scss */
+/* line 78, ../sass/custom.scss */
 #site-null {
   height: 50%;
   min-height: 400px;
   margin-bottom: -400px;
 }
 
-/* line 82, ../sass/custom.scss */
+/* line 83, ../sass/custom.scss */
 #site-logo-hello {
   width: 127px;
   height: 127px;
@@ -1364,7 +871,7 @@ body {
   margin-right: auto;
 }
 
-/* line 93, ../sass/custom.scss */
+/* line 94, ../sass/custom.scss */
 #site-logo {
   width: 229px;
   height: 152px;
@@ -1375,27 +882,54 @@ body {
   margin-bottom: 10px;
 }
 
-/* line 104, ../sass/custom.scss */
+/* line 105, ../sass/custom.scss */
 article {
   color: #4c6c79;
   width: 640px;
   margin: 50px auto;
 }
-/* line 108, ../sass/custom.scss */
+/* line 109, ../sass/custom.scss */
 article h1, article h2 {
   text-align: center;
 }
 
-/* line 112, ../sass/custom.scss */
+/* line 113, ../sass/custom.scss */
 .f-main {
   background-image: url("/assets/images/d.png");
   background-position: 50% 102%;
   background-repeat: no-repeat;
 }
 
-/* line 119, ../sass/custom.scss */
+/* line 120, ../sass/custom.scss */
 .f-main-footer {
   background-image: url("/assets/images/a.png");
   background-position: 46% 100%;
   background-repeat: no-repeat;
+}
+
+/* line 128, ../sass/custom.scss */
+.dropdown.open .dropdown-menu {
+  min-width: 100px;
+  background-color: #fefefe;
+  margin-top: 10px;
+  padding: 0;
+  border: 0;
+  border-top: 3px solid #ff927b;
+  border-bottom: 1px solid #cecece;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+}
+/* line 139, ../sass/custom.scss */
+.dropdown.open .dropdown-menu li {
+  border: 0;
+  border-bottom: 1px solid #efefef;
+}
+/* line 144, ../sass/custom.scss */
+.dropdown.open .dropdown-menu li a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+  color: #4c6c79;
 }
