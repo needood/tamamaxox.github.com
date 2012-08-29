@@ -5,10 +5,12 @@
   libs_path = "/assets/libs/";
 
   require([libs_path + "jquery-1.8.0.min.js", libs_path + "bootstrap-affix.js"], function() {
-    return $('.F-main-navbar').affix({
-      offset: {
-        top: $('.F-main-navbar').offset().top
-      }
+    return $(document).ready(function() {
+      return $('.F-main-navbar').affix({
+        offset: {
+          top: $('.F-main-navbar').offset().top
+        }
+      });
     });
   });
 
