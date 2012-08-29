@@ -127,13 +127,13 @@ article h2 {
 /* line 111, ../sass/custom.scss */
 .f-main {
   background-image: url("/assets/images/d.png");
-  background-position: bottom;
+  background-position: 50% 102%;
   background-repeat: no-repeat;
 }
 
 /* line 118, ../sass/custom.scss */
 .f-main-footer {
   background-image: url("/assets/images/a.png");
-  background-position: bottom;
+  background-position: 46% 100%;
   background-repeat: no-repeat;
 }
