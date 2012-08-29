@@ -82,18 +82,13 @@ body {
 }
 
 /* line 75, ../sass/custom.scss */
-.f-unit {
-  font-size: 22px;
-}
-
-/* line 78, ../sass/custom.scss */
 #site-null {
   height: 50%;
   min-height: 400px;
   margin-bottom: -400px;
 }
 
-/* line 83, ../sass/custom.scss */
+/* line 80, ../sass/custom.scss */
 #site-logo-hello {
   width: 127px;
   height: 127px;
@@ -102,7 +97,7 @@ body {
   margin-right: auto;
 }
 
-/* line 94, ../sass/custom.scss */
+/* line 91, ../sass/custom.scss */
 #site-logo {
   width: 229px;
   height: 152px;
@@ -113,32 +108,33 @@ body {
   margin-bottom: 10px;
 }
 
-/* line 105, ../sass/custom.scss */
+/* line 102, ../sass/custom.scss */
 article {
+  font-size: 20px;
   color: #4c6c79;
   width: 640px;
   margin: 50px auto;
 }
-/* line 109, ../sass/custom.scss */
+/* line 107, ../sass/custom.scss */
 article h1, article h2 {
   text-align: center;
 }
 
-/* line 113, ../sass/custom.scss */
+/* line 111, ../sass/custom.scss */
 .f-main {
   background-image: url("/assets/images/d.png");
   background-position: 50% 102%;
   background-repeat: no-repeat;
 }
 
-/* line 120, ../sass/custom.scss */
+/* line 118, ../sass/custom.scss */
 .f-main-footer {
   background-image: url("/assets/images/a.png");
   background-position: 46% 100%;
   background-repeat: no-repeat;
 }
 
-/* line 128, ../sass/custom.scss */
+/* line 126, ../sass/custom.scss */
 .dropdown.open .dropdown-menu {
   min-width: 100px;
   background-color: #fefefe;
@@ -151,12 +147,12 @@ article h1, article h2 {
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
 }
-/* line 139, ../sass/custom.scss */
+/* line 137, ../sass/custom.scss */
 .dropdown.open .dropdown-menu li {
   border: 0;
   border-bottom: 1px solid #efefef;
 }
-/* line 144, ../sass/custom.scss */
+/* line 142, ../sass/custom.scss */
 .dropdown.open .dropdown-menu li a {
   padding-top: 5px;
   padding-bottom: 5px;
