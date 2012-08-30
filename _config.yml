@@ -9,7 +9,7 @@ F:
   path:
     css: /assets/stylesheets
     libs: /assets/libs
-    script: /assets/javascript
+    scripts: /assets/javascripts
   nav_total: 4
 
 production_url : http://tamamaxox.github.com
