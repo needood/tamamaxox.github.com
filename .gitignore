@@ -1,8 +1,6 @@
 _site/*
 _theme_packages/*
-assets/sass/*
-assets/coffee/*
-assets/.sass-cache/*
+pre-assets/*
 Thumbs.db
 .DS_Store
 
@@ -11,5 +9,3 @@ Thumbs.db
 .rbenv-version
 .rvmrc
 *.swp
-*.scss
-*.coffee
