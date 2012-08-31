@@ -1,0 +1,37 @@
+
+
+._F_colors(@normal,@visited:false,@hover:false,@active:false,@focus:false){
+	color:@normal;
+	.iscolor (@c) when (iscolor(@c)){
+		color:@c;
+	}
+	.iscolor (@c){
+	}
+	&:hover{
+		.iscolor(@hover);
+	}
+	&:active{
+		.iscolor(@active);
+	}
+	&:visited{
+		.iscolor(@visited);
+	}
+	&:focus{
+		.iscolor(@focus);
+	}
+}
+
+
+
+
+
+._F_unstyled_link {
+	color: inherit;
+	text-decoration: inherit;
+	cursor: inherit;
+	&:active, &:focus {
+		outline: none;
+	}
+}
+
+

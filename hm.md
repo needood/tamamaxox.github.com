@@ -8,7 +8,7 @@ layout: page
 ***
 你好,我叫余浩明,毕业于广州大学,04界机械系通讯工程本科毕业.毕业以后不久就从事前端工作.
 
-Email: tamamaspace[#]gmail.com
+Email: tamamaspace(#)gmail.com
 
 工作
 ---
