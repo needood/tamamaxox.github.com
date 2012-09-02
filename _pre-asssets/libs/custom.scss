@@ -1,0 +1,189 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/typography";
+@import "compass/css3";
+
+$default-box-shadow-color:#CCC;
+
+$body-color:#9ceaee;
+$active-color:#ff927b;
+$article-color:#4c6c79;
+$background-color:#FEFEFE;
+h1{
+	font-size:200%;
+}
+h2{
+	font-size:150%;
+}
+h3{
+	font-size:120%;
+}
+h4{
+	font-size:100%;
+}
+h5{
+	font-size:90%;
+}
+h6{
+	font-size:80%;
+}
+@-webkit-keyframes fadein{
+	0%{
+		opacity:0;
+		left:-35px;
+	}
+	100%{
+		opacity:1;
+		left:10px;
+	}
+}
+body{
+	background-color:$body-color;
+	font-size:16px;
+}
+.f-main{
+}
+.f-main-navbar-{
+	margin:{
+		top:10px;
+	}
+}
+.f-main-navbar{
+	&.affix{
+		.f-block{
+			@include single-box-shadow(darken($article-color,9%),$default-box-shadow-h-offset ,$default-box-shadow-v-offset ,12px);
+			#logo{
+				background:{
+					image:url("/assets/images/logo.png");
+
+				}
+				left:10px;
+				top:8px;
+				-webkit-animation-name:fadein;
+				-webkit-animation-duration:3s;
+				-webkit-animation-timing-function:liear;
+				-webkit-animation-iteration-count:1;
+			}
+		}
+	}
+	width:100%;
+	background-color:$body-color;
+	.f-block{
+		height:100%;
+		width:100%;
+		margin:{
+			left:auto!important;
+			right:auto;
+		}
+		background-color:$article-color;
+		position:relative;
+		#logo{
+			height:34px;
+			width:57px;
+			position:absolute;
+		}
+		ul{
+			text-align:center;
+			li{
+				margin:{
+					left:5%;
+					right:5%;
+				}
+				&.active a{
+					@include link-colors($active-color);
+				}	
+				a{
+					display:block;
+					padding-top:15px;
+					@include unstyled-link;
+					@include link-colors($body-color);
+				}
+			}
+		}
+	}
+}
+#site-null{
+	height:50%;
+	min-height:400px;
+	margin-bottom:-400px;
+}
+#site-logo-hello{
+	width:127px;
+	height:127px;
+	background:{
+		image:url("/assets/images/c.png");
+	}
+	margin:{
+		left:auto;
+		right:auto;
+	}
+}
+#site-logo{
+	width:229px;
+	height:152px;
+	background-image:url("/assets/images/b.png");
+	margin:{
+		top:10px;
+		left:auto;
+		right:auto;
+		bottom:2em;
+	}
+}
+.f-unit{
+	font-size:18px;
+}
+article{
+	color:$article-color;
+	width:640px;
+	margin:2em auto;
+	h1,h2{
+		margin-top:1.5em;
+		text-align:center;
+	}
+}
+.f-main{
+	background:{
+		image:url("/assets/images/d.png");
+		position:50% 100%;
+		repeat:no-repeat;
+	}
+}
+.f-main-footer{
+	background:{
+		image:url("/assets/images/a.png");
+		position:46% 100%;
+		repeat:no-repeat;
+	}
+}
+.dropdown.open{
+	.dropdown-menu{
+		min-width: 100px;
+		background-color:$background-color;
+		margin-top:10px;
+		padding:0;
+		border:0;
+		border:{
+			top:3px solid $active-color;
+			bottom:1px solid darken($background-color,19%);
+		}
+		@include single-box-shadow;
+		li{
+			border:0;
+			border:{
+				bottom:1px solid darken($background-color,6%);
+			}
+			a{
+				padding:{
+					top:5px;
+					bottom:5px;
+					left:2px;
+					right:2px;
+				}
+				color:$article-color;
+			}
+		}
+	}
+}

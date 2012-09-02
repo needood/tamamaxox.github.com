@@ -8,15 +8,15 @@
     <script type="text/javascript" src="{{ site.F.path.scripts }}/require-jquery.js" data-main="{{ site.F.path.scripts }}/o" ></script>
 </head>
 
-<body class="f-on-footer f-on-navbar">
+<body data-spy="scroll" class="f-on-footer f-on-navbar">
     <div class="f-main">
 		<div id="site-null"></div>
 		<div id="site-logo-hello"></div>
 		<div id="site-logo"></div>
-        <nav class="f-main-navbar-">
-			<div class="f-main-navbar">
+        <div class="f-main-navbar-">
+			<nav class="f-main-navbar">
 				<div class="f-block">
-					 <div id="logo"></div>
+					<div id="logo"></div>
 					<ul class="f-inline-block">
 						{% assign pages_list = site.pages %}
 						{% assign group = 'navigation' %}
@@ -32,12 +32,10 @@
 
 					</ul>
 				</div>
-			</div>
-        </nav>
+			</nav>
+        </div>
 
-        <article class="f-unit clearfix">
-            {{ content }}
-        </article>
+        {{ content }}
     	<div class="f-main-footer-">
         </div>
     </div>

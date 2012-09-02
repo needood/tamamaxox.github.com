@@ -1,0 +1,74 @@
+
+
+._F_colors(@normal,@visited:false,@hover:false,@active:false,@focus:false){
+	color:@normal;
+	.iscolor (@c) when (iscolor(@c)){
+		color:@c;
+	}
+	.iscolor (@c){
+	}
+	&:hover{
+		.iscolor(@hover);
+	}
+	&:active{
+		.iscolor(@active);
+	}
+	&:visited{
+		.iscolor(@visited);
+	}
+	&:focus{
+		.iscolor(@focus);
+	}
+}
+
+
+
+
+
+._F_unstyled_link(){
+	color: inherit;
+	text-decoration: inherit;
+	cursor: inherit;
+	&:active, &:focus {
+		outline: none;
+	}
+}
+
+
+
+._F_inline_block(){
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	white-space: nowrap;
+}
+._F_ul_inline_block(){
+	padding:0;
+	border:0;
+	margin:0;
+	*zoom:1;
+	li {
+		list-style-image: none;
+		list-style-type: none;
+		margin-left: 0;
+		display: -moz-inline-stack;
+		vertical-align: middle;
+		*vertical-align: auto;
+		._F_inline_block;	
+	}
+}
+
+._F_clearfix(){
+    *zoom: 1;
+    &:before{
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+    &:after{
+        display: table;
+        content: "";
+        line-height: 0;
+        clear: both;
+    }
+}

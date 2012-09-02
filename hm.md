@@ -1,6 +1,6 @@
 ---
 title: HM 
-layout: page
+layout: book 
 ---
 
 简历
