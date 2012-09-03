@@ -2,7 +2,7 @@
 @active-color:#ff927b;
 @article-color:#4c6c79;
 @background-color:#FEFEFE;
-@article-width:640px;
+@article-width:640;
 
 @import "F_less/minix";
 
@@ -114,7 +114,7 @@ body{
 }
 article{
 	color:@article-color;
-	width:@article-width;
+	width:@article-width * 1px;
 	margin:2em auto;
 	h1,h2{
 		margin-top:1.5em;
@@ -153,28 +153,34 @@ article{
 #test_bar{
 	.nav{
 		width:100%;
-		background:lighten(@body-color,20%);
 		.f-block{
+			background:@body-color;
+			margin-top:-1px;
 			margin-left:auto;
 			margin-right:auto;
-			width:@article-width;
+			width:(@article-width+20) * 1px;
+			padding-left:10px;
+			padding-right:10px;
 			ul{
 				._F_ul_inline_block;
 				li{
 					a{
 						padding:5px 2px;
 						display:block;
-						._F_colors(@body-color,@body-color,@body-color)
+						._F_colors(@article-color,@article-color,@article-color);
 					}
 					&.active{
 						a{
-							._F_colors(@active-color,@active-color,@active-color)
+							._F_colors(@active-color,@active-color,@active-color);
 						}
 					}
 				}
 			}
 		}
 		&.affix{
+			.f-block{
+				._F_box_shadow(#898989,0,10px,10px,-6px);
+			}
 			position:fixed;
 			top:0px;
 		}

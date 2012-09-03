@@ -1,7 +1,7 @@
 requirejs ["jquery","mustache","bootstrap-affix","bootstrap-dropdown","bootstrap-scrollspy"],()->
 	$(document).ready ()->
 		navbar = $(".F-main-navbar-")
-		'navbar.css("height",navbar.height())'
+		navbar.css("height",navbar.height())
 		navbar.children(".F-main-navbar").affix offset:top:navbar.offset().top
 		sstpl = '''
 			<div class="nav">
@@ -22,10 +22,14 @@ requirejs ["jquery","mustache","bootstrap-affix","bootstrap-dropdown","bootstrap
 		scrollspybar = $("#test_bar")
 		if scrollspybar.length > 0 
 			scrollspybar.html Mustache.render sstpl,ssjson
-			scrollspybar.css("margin-top","-#{navbar.height()}");
 			scrollspybar.children(".nav").css("padding-top",navbar.height());
-			scrollspybar.css("height",scrollspybar.height())
-			scrollspybar.children(".nav").scrollspy()
+			scrollspybar.css("margin-top","-#{navbar.height()}");
+			ssheight = scrollspybar.height()+10
+			scrollspybar.css("height",ssheight)
+			$('body').scrollspy $.extend {},$('body').data(),offset:ssheight
+			$("#test_bar li > a").click (event)->
+				event.preventDefault()
+				$('body').scrollTop $("##{$(this).attr('href').replace(/^#/,'')}").offset().top - ssheight
 			scrollspybar.children(".nav").affix offset:top:scrollspybar.offset().top
 
 
