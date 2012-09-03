@@ -1,4 +1,4 @@
-requirejs ["jquery","mustache","bootstrap-affix","bootstrap-dropdown","bootstrap-scrollspy"],()->
+require ["mustache","jquery","bootstrap-affix","bootstrap-dropdown","bootstrap-scrollspy"],(Mustache)->
 	$(document).ready ()->
 		navbar = $(".F-main-navbar-")
 		navbar.css("height",navbar.height())
@@ -31,5 +31,4 @@ requirejs ["jquery","mustache","bootstrap-affix","bootstrap-dropdown","bootstrap
 				event.preventDefault()
 				$('body').scrollTop $("##{$(this).attr('href').replace(/^#/,'')}").offset().top - ssheight
 			scrollspybar.children(".nav").affix offset:top:scrollspybar.offset().top
-
 
