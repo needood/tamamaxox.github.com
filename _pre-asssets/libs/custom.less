@@ -50,7 +50,6 @@ body{
 			#logo{
 				background-image:url("/assets/images/logo.png");
 				left:10px;
-				top:8px;
 				-webkit-animation-name:fadein;
 				-webkit-animation-duration:3s;
 				-webkit-animation-timing-function:liear;
@@ -80,11 +79,12 @@ body{
 					._F_colors(@active-color,@active-color,@active-color);
 				}	
 				a{
+					font-size:12px;
 					._F_unstyled_link;
 					._F_colors(@body-color,@body-color,@body-color);
 					display:block;
-					padding-top:15px;
-					padding-bottom:15px;
+					padding-top:10px;
+					padding-bottom:10px;
 
 				}
 			}
@@ -165,6 +165,7 @@ article{
 				._F_ul_inline_block;
 				li{
 					a{
+						font-size:14px;
 						padding:5px 2px;
 						display:block;
 						._F_colors(@article-color,@article-color,@article-color);
