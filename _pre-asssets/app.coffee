@@ -6,6 +6,7 @@ config =
 	baseUrl: "./libs"
 	paths:jquery: "empty:"
 	name: "F"
+	exclude:["bootstrap-scrollspy"]
 	out: "../assets/scripts/o.js"
 cssc =
 	input:"./libs/o.less"

@@ -14,6 +14,7 @@
       jquery: "empty:"
     },
     name: "F",
+    exclude: ["bootstrap-scrollspy"],
     out: "../assets/scripts/o.js"
   };
 

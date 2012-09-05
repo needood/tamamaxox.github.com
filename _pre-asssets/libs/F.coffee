@@ -1,4 +1,4 @@
-require ["mustache","jquery","bootstrap-affix","bootstrap-dropdown","bootstrap-scrollspy"],(Mustache)->
+require ["mustache","jquery","bootstrap-affix","bootstrap-dropdown"],(Mustache)->
 	$(document).ready ()->
 		navbar = $(".F-main-navbar-")
 		navbar.css("height",navbar.height())
@@ -19,16 +19,17 @@ require ["mustache","jquery","bootstrap-affix","bootstrap-dropdown","bootstrap-s
 		ssjson = items:[]
 		$("article [id]").each (i,item)->
 			ssjson.items.push id:$(item).attr("id"),content:$(item).text()
-		scrollspybar = $("#test_bar")
-		if scrollspybar.length > 0 
-			scrollspybar.html Mustache.render sstpl,ssjson
-			scrollspybar.children(".nav").css("padding-top",navbar.height());
-			scrollspybar.css("margin-top","-#{navbar.height()}");
-			ssheight = scrollspybar.height()+10
-			scrollspybar.css("height",ssheight)
-			$('body').scrollspy $.extend {},$('body').data(),offset:ssheight
-			$("#test_bar li > a").click (event)->
-				event.preventDefault()
-				$('body').scrollTop $("##{$(this).attr('href').replace(/^#/,'')}").offset().top - ssheight
-			scrollspybar.children(".nav").affix offset:top:scrollspybar.offset().top
+		scrollspybar = $("#book_bar")
+		if scrollspybar.length > 0
+			require ["bootstrap-scrollspy"],()->
+				scrollspybar.html Mustache.render sstpl,ssjson
+				scrollspybar.children(".nav").css("padding-top",navbar.height());
+				scrollspybar.css("margin-top","-#{navbar.height()}");
+				ssheight = scrollspybar.height()+10
+				scrollspybar.css("height",ssheight)
+				$('body').scrollspy $.extend {},$('body').data(),offset:ssheight
+				scrollspybar.find("li > a").click (event)->
+					event.preventDefault()
+					$('body').scrollTop $("##{$(this).attr('href').replace(/^#/,'')}").offset().top - ssheight
+				scrollspybar.children(".nav").affix offset:top:scrollspybar.offset().top
 
