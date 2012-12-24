@@ -2,6 +2,7 @@
 @import "normalize";
 @bg:#FFF;
 @font:#888;
+
 body{
 	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
 	color:@font;
@@ -14,18 +15,19 @@ body{
 		._F_colors(@font);
 	}
 }
-.navbar{
+.header{
 	background-color:darken(@bg,3%);
 	padding:0px 5px;
 	height:80px;
 	line-height:80px;
 	
 	._F_box_shadow(#555,0px,0px,6px);
+	letter-spacing:0.1em;
 }
 .inner{
 	._F_center(960px);
 }
-article{
+.article{
 	padding-top:40px;
 	padding-bottom:40px;
 	h2{
@@ -50,14 +52,11 @@ article{
 		margin:0 8% 0 5%;
 		padding:1em;
 	}
-	section{
+	.section{
 		padding-bottom:40px;
 	}
 }
 
-header{
-	letter-spacing:0.1em;
-}
 #b612{
 	._F_img_button(80px,80px,'b612.jpg');
 	._F_center(80px);
