@@ -10,4 +10,4 @@ test
 * [ ] busyman 平台
 * [ ] 备忘录 与 code editor 合并
 * [ ] 手机ui构建
-* [ ] 院校库
+* [ ] g院校库
