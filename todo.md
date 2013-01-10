@@ -1,5 +1,5 @@
 ---
-layout: default2
+layout: default
 title: todolist
 group: navigation
 weight: 5
