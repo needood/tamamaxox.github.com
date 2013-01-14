@@ -1,4 +1,5 @@
 auto: true
+server: true
 pygments: true
 permalink: /:categories/:title
 server_port: 4001
