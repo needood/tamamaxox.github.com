@@ -7,4 +7,4 @@
 		{% endif %}
 	{% endif %}
 {% endfor %}
-{% assign group = null %}
+{% assign group = nil %}
