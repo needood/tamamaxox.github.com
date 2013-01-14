@@ -12,6 +12,7 @@ F:
     scripts: /assets/scripts
 
 production_url : http://tamamaxox.github.com
+gatekeeper_url: http://tamamaxoxkeeper.herokuapp.com
 
 oauth_client_id: 5082addd8484a7b0066b
 
