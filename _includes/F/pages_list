@@ -1,4 +1,4 @@
-{% for node in site.categories[group] limit:40 offset:0 %}
+{% for node in site.categories.navigation limit:40 offset:0 %}
 	{% if node.title != null %}
 		{% if page.url == node.url %}
 			<li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
