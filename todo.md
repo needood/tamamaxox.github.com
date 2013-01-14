@@ -1,8 +1,7 @@
 ---
 layout: page
 title: todolist
-group: navigation
-weight: 5
+categories: navigation
 ---
 
 test
