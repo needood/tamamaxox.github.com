@@ -1,7 +1,6 @@
 ---
-title: 首页 
+title: 首页
 layout: page
-categories: navigation
 ---
 
 #hello world
