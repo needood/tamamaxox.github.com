@@ -54,7 +54,7 @@ function authenticate() {
   // Handle Code
   if (match) {
     $.getJSON('{{site.gatekeeper_url}}/authenticate/'+match[1], function(data) {
-      $.cookie('oauth-token', data.token);
+      $.cookie('oauth-token', data.token,{path:'/'});
       window.authenticated = true;
       // Adjust URL
       var regex = new RegExp("\\?code="+match[1]);
@@ -69,7 +69,7 @@ function authenticate() {
 
 function logout() {
   window.authenticated = false;
-  $.cookie("oauth-token", null);
+  $.cookie("oauth-token", null,{path:'/'});
 }
 
 // Load Application
@@ -87,8 +87,8 @@ function loadApplication(cb) {
       contentType: 'application/x-www-form-urlencoded',
       headers : { Authorization : 'token ' + $.cookie('oauth-token') },
       success: function(res) {
-        $.cookie("avatar", res.avatar_url);
-        $.cookie("username", res.login);
+        $.cookie("avatar", res.avatar_url,{path:'/'});
+        $.cookie("username", res.login,{path:'/'});
         app.username = res.login;
 
         var user = github().getUser();
