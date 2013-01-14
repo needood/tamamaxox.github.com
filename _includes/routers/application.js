@@ -15,11 +15,11 @@ routers.Application = Backbone.Router.extend({
   start: function() {
     if (confirmExit()) {
       app.state = {
-        user: "",
-        repo: "",
-        mode: "",
-        branch: "",
-        path: ""
+        user: "tamamaxox",
+        repo: "tamamaxox.github.com",
+        mode: "tree",
+        branch: "master",
+        path: "_posts"
       };
       app.instance.start();
     }
