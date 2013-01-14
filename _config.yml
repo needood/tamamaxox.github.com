@@ -13,5 +13,6 @@ F:
 
 production_url : http://tamamaxox.github.com
 
+oauth_client_id: 5082addd8484a7b0066b
 
 baseurl: "backend/"
