@@ -1,45 +1,47 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>{{ page.title }} - {{ site.title }}</title>
+		<meta name="author" content="{{ site.author.name }}">
+		<base target="_blank" />
+		<link href='{{ site.F.path.css }}/o.css' media="screen, projection" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="{{ site.F.path.scripts }}/require-jquery.js" data-main="{{ site.F.path.scripts }}/o" ></script>
+	</head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>{{ page.title }} - {{ site.title }}</title>
-	<meta name="author" content="{{ site.author.name }}">
-	<link href='{{ site.F.path.css }}/o.css' media="screen, projection" rel="stylesheet" type="text/css" />
-	<script type="text/javascript" src="{{ site.F.path.scripts }}/require-jquery.js" data-main="{{ site.F.path.scripts }}/o" ></script>
-</head>
+	<body class="f-on-footer f-on-navbar">
+		<div class="f-main">
+			<div id="site-null"></div>
+			<div id="site-logo-hello"></div>
+			<div id="site-logo"></div>
+			<div class="f-main-navbar-">
+				<div class="f-main-navbar">
+					<div class="f-block">
+						<div id="logo"></div>
+						<ul class="f-inline-block">
+							{% assign group = 'navigation' %}
+							{% include F/pages_list %}
+							{% assign group = null %}
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" id="F-b612" href="#">我的B612<b class="caret"></b></a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="F-b612">
+									{% for node in site.categories.b612 limit:40 offset:0 %}
+									<li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+									{% endfor %}
+								</ul>
+							</li>
 
-<body class="f-on-footer f-on-navbar">
-    <div class="f-main">
-		<div id="site-null"></div>
-		<div id="site-logo-hello"></div>
-		<div id="site-logo"></div>
-        <div class="f-main-navbar-">
-			<div class="f-main-navbar">
-				<div class="f-block">
-					<div id="logo"></div>
-					<ul class="f-inline-block">
-						{% assign group = 'navigation' %}
-						{% include F/pages_list %}
-						{% assign group = null %}
-						<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" id="F-b612" href="#">我的B612<b class="caret"></b></a>
-							<ul class="dropdown-menu" role="menu" aria-labelledby="F-b612">
-								{% for node in site.categories.b612 limit:40 offset:0 %}
-								<li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
-								{% endfor %}
-							</ul>
-						</li>
-
-					</ul>
+						</ul>
+					</div>
 				</div>
 			</div>
+			{{ content }}
+			<div class="f-main-footer-">
+			</div>
 		</div>
-		{{ content }}
-		<div class="f-main-footer-">
-		</div>
-	</div>
 
 
-    <footer class="f-main-footer" id="site-footer">
-    </footer>
-</body>
+		<div class="f-main-footer" id="site-footer">
+		</div>
+	</body>
+</html>
