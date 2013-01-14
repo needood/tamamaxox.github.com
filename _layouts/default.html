@@ -19,14 +19,14 @@
 					<div class="f-block">
 						<div id="logo"></div>
 						<ul class="f-inline-block">
-							<li><a href="/">首页</a></li>
+							<li><a href="/" >首页</a></li>
 							{% assign group = 'navigation' %}
 							{% include F/pages_list %}
 							<li class="dropdown">
 								<a class="dropdown-toggle" data-toggle="dropdown" id="F-b612" href="#">我的B612<b class="caret"></b></a>
 								<ul class="dropdown-menu" role="menu" aria-labelledby="F-b612">
 									{% for node in site.categories.b612 limit:40 offset:0 %}
-									<li><a target="_self" href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+									<li><a target="_blank" href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
 									{% endfor %}
 								</ul>
 							</li>
