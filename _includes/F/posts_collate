@@ -44,9 +44,10 @@ Usage:
     <li><span>{{ post.date | date: "%m月 %e日 - %Y年" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
     {% if forloop.last %}
       </ul>
+    {% else %}
+      {% capture next_year %}{{ this_year }}{% endcapture %}
+      {% capture next_month %}{{ this_month }}月{% endcapture %}
     {% endif %}
-    {% capture next_year %}{{ this_year }}{% endcapture %}
-    {% capture next_month %}{{ this_month }}月{% endcapture %}
   {% endfor %}
 {% endif %}
 {% assign posts_collate = nil %}
