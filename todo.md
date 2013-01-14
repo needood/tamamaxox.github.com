@@ -1,7 +1,6 @@
 ---
 layout: page
 title: todolist
-categories: navigation
 ---
 
 test
