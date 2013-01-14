@@ -14,4 +14,4 @@ F:
 production_url : http://tamamaxox.github.com
 
 
-baseurl: "backend"
+baseurl: "backend/"
