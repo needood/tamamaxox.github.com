@@ -8,5 +8,4 @@
 {% include F/libs/bootstrap-dropdown.js %}
 {% include F/libs/underscore.js %}
 {% include F/libs/backbone.js %}
-{% include F/libs/mustache.js %}
 {% include F/libs/F.js %}

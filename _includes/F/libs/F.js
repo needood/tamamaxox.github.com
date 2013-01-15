@@ -2,7 +2,7 @@
 (function() {
 
   $(document).ready(function() {
-    var navbar, scrollspybar, ssheight, ssjson, sstpl;
+    var navbar, scrollspybar, ssheight, sshtml;
     if ($.cookie('oauth-token')) {
       $('#backend').addClass('show');
     }
@@ -13,19 +13,14 @@
         top: navbar.offset().top
       }
     });
-    sstpl = '<div class="nav">\n	<div class="f-block">\n		<ul>\n		{{#items}}\n			<li>\n				<a href="#{{id}}">{{content}}</a>\n			</li>\n		{{/items}}\n		</ul>\n	</div>\n</div>';
-    ssjson = {
-      items: []
-    };
+    sshtml = '<div class="nav">\n	<div class="f-block">\n		<ul>';
     $("article [id]").each(function(i, item) {
-      return ssjson.items.push({
-        id: $(item).attr("id"),
-        content: $(item).text()
-      });
+      return sshtml += "<li>\n	<a href='" + ($(item).attr("id")) + "'>" + ($(item).text()) + "</a>\n</li>";
     });
+    sshtml += '		</ul>\n	</div>\n</div>';
     scrollspybar = $("#book_bar");
     if (scrollspybar.length > 0) {
-      scrollspybar.html(Mustache.render(sstpl, ssjson));
+      scrollspybar.html(sshtml);
       scrollspybar.children(".nav").css("padding-top", navbar.height());
       scrollspybar.css("margin-top", "-" + (navbar.height()));
       ssheight = scrollspybar.height() + 10;

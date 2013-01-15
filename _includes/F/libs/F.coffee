@@ -4,25 +4,25 @@ $(document).ready ()->
 	navbar = $(".F-main-navbar-")
 	navbar.css("height",navbar.height())
 	navbar.children(".F-main-navbar").affix offset:top:navbar.offset().top
-	sstpl = '''
-		<div class="nav">
-			<div class="f-block">
-				<ul>
-				{{#items}}
-					<li>
-						<a href="#{{id}}">{{content}}</a>
-					</li>
-				{{/items}}
+	sshtml = '''
+			<div class="nav">
+				<div class="f-block">
+					<ul>
+		'''
+	$("article [id]").each (i,item)->
+		sshtml += """
+				<li>
+					<a href='#{$(item).attr("id")}'>#{$(item).text()}</a>
+				</li>
+			"""
+	sshtml += '''
 				</ul>
 			</div>
 		</div>
 		'''
-	ssjson = items:[]
-	$("article [id]").each (i,item)->
-		ssjson.items.push id:$(item).attr("id"),content:$(item).text()
 	scrollspybar = $("#book_bar")
 	if scrollspybar.length > 0
-		scrollspybar.html(Mustache.render(sstpl,ssjson))
+		scrollspybar.html(sshtml)
 		scrollspybar.children(".nav").css("padding-top",navbar.height());
 		scrollspybar.css("margin-top","-#{navbar.height()}");
 		ssheight = scrollspybar.height()+10
