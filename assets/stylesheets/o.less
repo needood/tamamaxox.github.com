@@ -143,24 +143,29 @@ article{
 	background-position:46% 100%;
 	background-repeat:no-repeat;
 }
-.dropdown.open{
+.dropdown{
 	.dropdown-menu{
-		min-width: 100px;
-		background-color:@background-color;
-		margin-top:-3px;
-		padding:0;
-		border:0;
-		border-top:3px solid @active-color;
-		border-bottom:1px solid darken(@background-color,19%);
-		li{
-			margin:0;
+		display:none;
+	}
+	&.open{
+		.dropdown-menu{
+			min-width: 100px;
+			background-color:@background-color;
+			margin-top:-3px;
 			padding:0;
 			border:0;
-			border-bottom:1px solid darken(@background-color,6%);
-			display:block!important;
-			a{
-				padding:5px 2px;
-				color:@article-color!important;
+			border-top:3px solid @active-color;
+			border-bottom:1px solid darken(@background-color,19%);
+			li{
+				margin:0;
+				padding:0;
+				border:0;
+				border-bottom:1px solid darken(@background-color,6%);
+				display:block!important;
+				a{
+					padding:5px 2px;
+					color:@article-color!important;
+				}
 			}
 		}
 	}
