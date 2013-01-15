@@ -204,8 +204,7 @@ body .f-main{clear:both;min-height:100%;height:auto !important;height:100%;margi
 body .f-main-footer{clear:both;position:relative;height:160px;}
 .affix{position:fixed;}.affix.f-main-navbar{top:0;}
 .f-main-navbar-{margin-top:10px;}
-.f-main-navbar{z-index:10;width:100%;background-color:#9ceaee;}.f-main-navbar.affix .f-block #logo{background-image:url("/assets/images/logo.png");left:10px;-webkit-animation-name:fadein;-webkit-animation-duration:3s;-webkit-animation-timing-function:liear;-webkit-animation-iteration-count:1;}
-.f-main-navbar .f-block{width:100%;margin-left:auto!important;margin-right:auto;background-color:#4c6c79;background-image:-webkit-linear-gradient(45deg, #4c6c79 0%, #334455 50%, #4c6c79 100%);position:relative;}.f-main-navbar .f-block:after{background:url("/assets/images/pattern.png") repeat center center;}
+.f-main-navbar{z-index:10;width:100%;background-color:#9ceaee;}.f-main-navbar .f-block{width:100%;margin-left:auto!important;margin-right:auto;background-color:#4c6c79;background-image:-webkit-linear-gradient(45deg, #4c6c79 0%, #334455 50%, #4c6c79 100%);position:relative;}.f-main-navbar .f-block:after{background:url("/assets/images/pattern.png") repeat center center;}
 .f-main-navbar .f-block:after{content:'';display:block;position:absolute;top:0;right:0;bottom:0;left:0;opacity:0.4;}
 .f-main-navbar .f-block:after{background:url("/assets/images/pattern.png") repeat center center;}
 .f-main-navbar .f-block:after{content:'';display:block;position:absolute;top:0;right:0;bottom:0;left:0;opacity:0.4;}
@@ -244,4 +243,5 @@ article{color:#4c6c79;width:640px;margin:2em auto;}article h1,article h2{margin-
 #book_bar .nav.affix{position:fixed;top:0px;}#book_bar .nav.affix .f-block{-moz-box-shadow:0 10px 10px -6px #898989;-webkit-box-shadow:0 10px 10px -6px #898989;box-shadow:0 10px 10px -6px #898989;}
 #backend .backend{display:none;}
 #backend.show .backend{display:inline;}
-#backend{border-radius:4px;padding:4px 6px;position:absolute;bottom:0;right:0;}
+#backend{border-radius:4px;color:#FFF;background:#888;text-decoration:inherit;*text-decoration:none;padding:4px 6px;position:absolute;bottom:0;right:0;}#backend:active,#backend:focus{outline:none;}
+#backend:active,#backend:focus{outline:none;}
