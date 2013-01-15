@@ -22,7 +22,7 @@ $(document).ready ()->
 		ssjson.items.push id:$(item).attr("id"),content:$(item).text()
 	scrollspybar = $("#book_bar")
 	if scrollspybar.length > 0
-		scrollspybar.html Mustache.render sstpl,ssjson
+		scrollspybar.html(Mustache.render(sstpl,ssjson))
 		scrollspybar.children(".nav").css("padding-top",navbar.height());
 		scrollspybar.css("margin-top","-#{navbar.height()}");
 		ssheight = scrollspybar.height()+10
