@@ -42,9 +42,22 @@
 
 
 		<div class="f-main-footer" id="site-footer">
-			<div id="backend" style="display:none;">
+			<style type="text/css">
+				#backend .backend{
+					display:none;
+				}
+				#backend.show .backend{
+					display:inline;
+				}
+				#backend{
+					position:absolute;
+					bottom:0;
+					right:0;
+				}
+			</style>
+			<div id="backend">
 				<a href="/{{site.baseurl}}#tamamaxox/tamamaxox.github.com/tree/master/_posts">后台管理</a>
-				<a href="/{{site.baseurl}}#tamamaxox/tamamaxox.github.com/new/master/_posts">发表新文章</a>
+				<a class="backend" href="/{{site.baseurl}}#tamamaxox/tamamaxox.github.com/new/master/_posts">发表新文章</a>
 			</div>
 			<script type="text/javascript" src="/backend.js"> </script>
 			
