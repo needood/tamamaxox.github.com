@@ -1,6 +1,7 @@
 @import normalize;
 @import F;
 @import md;
+@import "minix";
 
 
 @body-color:#9ceaee;
@@ -9,7 +10,6 @@
 @background-color:#FEFEFE;
 @article-width:640;
 
-@import "minix";
 
 h1{
 	font-size:200%;
@@ -43,6 +43,12 @@ body{
 	background-color:@body-color;
 	font-size:16px;
 	._F_awesome_body(160px);
+}
+.affix{
+	position:fixed;
+	&.f-main-navbar{
+		top:0;
+	}
 }
 .f-main{
 }

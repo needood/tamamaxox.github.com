@@ -9,6 +9,7 @@ h5{font-size:90%;}
 h6{font-size:80%;}
 @-webkit-keyframes fadein{0%{opacity:0;left:-35px;} 100%{opacity:1;left:10px;}}body{background-color:#9ceaee;font-size:16px;height:100%;margin:0;}body .f-main{clear:both;min-height:100%;height:auto !important;height:100%;margin-bottom:-160px;}body .f-main .f-main-footer-{height:160px;}
 body .f-main-footer{clear:both;position:relative;height:160px;}
+.affix{position:fixed;}.affix.f-main-navbar{top:0;}
 .f-main-navbar-{margin-top:10px;}
 .f-main-navbar{z-index:10;width:100%;background-color:#9ceaee;}.f-main-navbar.affix .f-block #logo{background-image:url("/assets/images/logo.png");left:10px;-webkit-animation-name:fadein;-webkit-animation-duration:3s;-webkit-animation-timing-function:liear;-webkit-animation-iteration-count:1;}
 .f-main-navbar .f-block{width:100%;margin-left:auto!important;margin-right:auto;background-color:#4c6c79;background-image:-webkit-linear-gradient(45deg, #4c6c79 0%, #334455 50%, #4c6c79 100%);position:relative;}.f-main-navbar .f-block:after{background:url("/assets/images/pattern.png") repeat center center;}
