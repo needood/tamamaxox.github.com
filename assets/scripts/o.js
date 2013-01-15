@@ -10,5 +10,8 @@
 $(document).ready(function(){
 	{% include F/libs/F.js %}
 	{% include F/libs/bootstrap-scrollspy.js %}
-	$('body').scrollspy($.extend({},$('body').data(),{offset:ssheight}))
+	scrollspybar = $("#book_bar")
+	if(scrollspybar.length > 0){
+		$('body').scrollspy($.extend({},$('body').data(),{offset:ssheight}))
+	}
 })
