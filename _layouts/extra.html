@@ -1,26 +1,35 @@
-{{ content }}
-<div id="backend">
-	<a href='http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent( '“' + window.getSelection() + '” —— ' + document.title )+ '&url='+ encodeURIComponent(location.href) target="_blank">微博分享</a>
-	<a href="/{{site.baseurl}}#tamamaxox/tamamaxox.github.com/tree/master/_posts">后台管理</a>
-	<a class="backend" href="/{{site.baseurl}}#tamamaxox/tamamaxox.github.com/new/master/_posts">发表新文章</a>
-</div>
-<script type="text/javascript">
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fbb20d41718ad37fb6b9c6692ba73e75b' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
+<!DOCTYPE HTML>
+<html xmlns:wb="http://open.weibo.com/wb">
+	<head>
+		<meta charset="UTF-8">
+		{{ content }}
+		<div id="backend">
+			<wb:share-button count="n" ></wb:share-button>
+			<g:plusone></g:plusone>
+			<a href="/{{site.baseurl}}#tamamaxox/tamamaxox.github.com/tree/master/_posts">后台管理</a>
+			<a class="backend" href="/{{site.baseurl}}#tamamaxox/tamamaxox.github.com/new/master/_posts">发表新文章</a>
+		</div>
+		<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+		<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-37675138-1']);
-  _gaq.push(['_trackPageview']);
+		<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fbb20d41718ad37fb6b9c6692ba73e75b' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-37675138-1']);
+		  _gaq.push(['_trackPageview']);
 
-</script>
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
 
-</body>
+		</script>
+		
+
+	</body>
 </html>
