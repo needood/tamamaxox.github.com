@@ -17,7 +17,7 @@
     if (scrollspybar.length > 0) {
       sshtml = '<div class="nav">\n	<div class="f-block">\n		<ul>';
       $("article [id]").each(function(i, item) {
-        return sshtml += "<li>\n	<a href='" + ($(item).attr("id")) + "'>" + ($(item).text()) + "</a>\n</li>";
+        return sshtml += "<li>\n	<a href='#" + ($(item).attr("id")) + "'>" + ($(item).text()) + "</a>\n</li>";
       });
       sshtml += '		</ul>\n	</div>\n</div>';
       scrollspybar.html(sshtml);
@@ -25,11 +25,9 @@
       scrollspybar.css("margin-top", "-" + (navbar.height()));
       ssheight = scrollspybar.height() + 10;
       scrollspybar.css("height", ssheight);
-      setTimeout(function() {
-        return $('body').scrollspy($.extend({}, $('body').data(), {
-          offset: ssheight
-        }, 1000));
-      });
+      $('body').scrollspy($.extend({}, $('body').data(), {
+        offset: ssheight
+      }));
       scrollspybar.find("li > a").click(function(event) {
         event.preventDefault();
         return $('body').scrollTop($("#" + ($(this).attr('href').replace(/^#/, ''))).offset().top - ssheight);

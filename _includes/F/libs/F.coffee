@@ -14,7 +14,7 @@ $(document).ready ()->
 		$("article [id]").each (i,item)->
 			sshtml += """
 					<li>
-						<a href='#{$(item).attr("id")}'>#{$(item).text()}</a>
+						<a href='##{$(item).attr("id")}'>#{$(item).text()}</a>
 					</li>
 				"""
 		sshtml += '''
@@ -27,9 +27,7 @@ $(document).ready ()->
 		scrollspybar.css("margin-top","-#{navbar.height()}");
 		ssheight = scrollspybar.height()+10
 		scrollspybar.css("height",ssheight)
-		setTimeout ()->
-			$('body').scrollspy $.extend {},$('body').data(),offset:ssheight
-			,1000
+		$('body').scrollspy $.extend {},$('body').data(),offset:ssheight
 		scrollspybar.find("li > a").click (event)->
 			event.preventDefault()
 			$('body').scrollTop $("##{$(this).attr('href').replace(/^#/,'')}").offset().top - ssheight
