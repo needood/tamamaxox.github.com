@@ -7,7 +7,7 @@
 {% include F/libs/bootstrap-dropdown.js %}
 
 
-$(document).ready({
+$(document).ready(function(){
 	{% include F/libs/F.js %}
 	{% include F/libs/bootstrap-scrollspy.js %}
 	$('body').scrollspy($.extend({},$('body').data(),{offset:ssheight}))
