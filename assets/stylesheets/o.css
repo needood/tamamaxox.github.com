@@ -243,5 +243,5 @@ article{color:#4c6c79;width:640px;margin:2em auto;}article h1,article h2{margin-
 #book_bar .nav.affix{position:fixed;top:0px;}#book_bar .nav.affix .f-block{-moz-box-shadow:0 10px 10px -6px #898989;-webkit-box-shadow:0 10px 10px -6px #898989;box-shadow:0 10px 10px -6px #898989;}
 #backend .backend{display:none;}
 #backend.show .backend{display:inline;}
-#backend{border-radius:4px;background:#485e68;padding:4px 6px;position:absolute;bottom:10px;right:10px;}#backend a{text-decoration:inherit;*text-decoration:none;color:#FFF;}#backend a:active,#backend a:focus{outline:none;}
+#backend{border-radius:4px;background:#485e68;padding:4px 6px;position:fixed;*position:absolute;bottom:10px;right:10px;}#backend a{text-decoration:inherit;*text-decoration:none;color:#FFF;}#backend a:active,#backend a:focus{outline:none;}
 #backend a:active,#backend a:focus{outline:none;}
