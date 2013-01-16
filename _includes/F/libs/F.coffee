@@ -11,7 +11,7 @@ $(document).ready ()->
 					<div class="f-block">
 						<ul>
 			'''
-		$("article [id]").each (i,item)->
+		$(".article [id]").each (i,item)->
 			sshtml += """
 					<li>
 						<a href='##{$(item).attr("id")}'>#{$(item).text()}</a>

@@ -16,7 +16,7 @@
     scrollspybar = $("#book_bar");
     if (scrollspybar.length > 0) {
       sshtml = '<div class="nav">\n	<div class="f-block">\n		<ul>';
-      $("article [id]").each(function(i, item) {
+      $(".article [id]").each(function(i, item) {
         return sshtml += "<li>\n	<a href='#" + ($(item).attr("id")) + "'>" + ($(item).text()) + "</a>\n</li>";
       });
       sshtml += '		</ul>\n	</div>\n</div>';
