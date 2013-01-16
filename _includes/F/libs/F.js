@@ -6,9 +6,9 @@
     if ($.cookie('oauth-token')) {
       $('#backend').addClass('show');
     }
-    navbar = $(".F-main-navbar-");
+    navbar = $(".f-main-navbar-");
     navbar.css("height", navbar.height());
-    navbar.children(".F-main-navbar").affix({
+    navbar.children(".f-main-navbar").affix({
       offset: {
         top: navbar.offset().top
       }
