@@ -160,8 +160,8 @@ body .f-main-footer{clear:both;position:relative;height:160px;}
 #site-logo-hello{width:127px;height:127px;background-image:url("/assets/images/c.png");margin-left:auto;margin-right:auto;}
 #site-logo{width:229px;height:152px;background-image:url("/assets/images/b.png");margin:10px auto 2em auto;}
 .f-unit{font-size:18px;}
-.inner{width:640px;}
-.article{color:#4c6c79;margin:2em auto;}.article h1,.article h2{margin-top:1.5em;text-align:center;}
+.inner{width:640px;margin:0 auto;}
+.article{color:#4c6c79;margin:2em 0;}.article h1,.article h2{margin-top:1.5em;text-align:center;}
 .f-main{background-image:url("/assets/images/d.png");background-position:50% 100%;background-repeat:no-repeat;}
 .f-inline-block{border:0;margin:0;*zoom:1;list-style-image:none;list-style-type:none;padding-left:0;}.f-inline-block li{margin-left:0;display:-moz-inline-stack;display:inline-block;*display:inline;*zoom:1;white-space:nowrap;}
 .f-inline-block li{margin-left:0;display:-moz-inline-stack;display:inline-block;*display:inline;*zoom:1;white-space:nowrap;}
