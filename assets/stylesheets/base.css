@@ -65,4 +65,4 @@ article td{vertical-align:top;}
 #backend{border-radius:4px;background:#485e68;padding:4px 6px;position:fixed;*position:absolute;bottom:10px;right:10px;}#backend .backend{display:none;}
 #backend.show .backend{display:inline;}
 #backend a{text-decoration:inherit;*text-decoration:none;color:#FFF;}#backend a:active,#backend a:focus{outline:none;}
-.ds-thread{background:#FFF;border-radius:4px;padding:20px 10px;}
+.ds-thread{background:azure;border-radius:4px;padding:20px 10px;}
