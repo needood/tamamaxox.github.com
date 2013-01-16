@@ -7,18 +7,20 @@ routers.Application = Backbone.Router.extend({
   initialize: function() {
     // Using this.route, because order matters
     this.route(/(.*\/.*)/, 'path', this.path);
-    this.route(":user", 'user', this.profile);
-    this.route(":user/:repo", 'repo', this.repo);
+    //changed
+    //this.route(":user", 'user', this.profile);
+    //this.route(":user/:repo", 'repo', this.repo);
     this.route("", "start", this.start);
   },
 
   start: function() {
     if (confirmExit()) {
       app.state = {
-        user: "",
-        repo: "",
-        mode: "",
-        branch: "",
+        //changed
+        user: "tamamaxox",
+        repo: "tamamaxox.github.com",
+        mode: "tree",
+        branch: "master",
         path: ""
       };
       app.instance.start();
@@ -28,11 +30,12 @@ routers.Application = Backbone.Router.extend({
   extractURL: function(url) {
     url = url.split('/');
     app.state = {
-      user: url[0],
-      repo: url[1],
-      mode: url[2],
-      branch: url[3],
-      path: (url.slice(4) || []).join('/')
+      //
+      user: 'tamamaxox',
+      repo: 'tamamaxox.github.com',
+      mode: url[0],
+      branch: url[1],
+      path: (url.slice(2) || []).join('/')
     };
     return app.state;
   },
