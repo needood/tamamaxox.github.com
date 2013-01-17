@@ -250,6 +250,7 @@ function loadPosts(user, reponame, branch, path, cb) {
     repo.show(function(err, repodata) {
       if (!branch) app.state.branch = branch = repodata.master_branch;
       app.state.permissions = repodata.permissions;
+      console.log(app.state);
       load();
     });
   }
