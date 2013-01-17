@@ -235,6 +235,7 @@ function loadPosts(user, reponame, branch, path, cb) {
         loadBranches(user, reponame, function(err, branches) {
           if (err) return cb("Branches couldn't be fetched");
           app.state.path = path ? path : "";
+          app.state.file = null;
           app.state.branches = _.filter(branches, function(b) { return b !== branch });
           window.gotFiles || ( window.gotFiles = {});
           window.gotFiles[user] || ( window.gotFiles[user] = {});
