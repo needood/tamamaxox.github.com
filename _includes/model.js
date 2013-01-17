@@ -251,13 +251,11 @@ function loadPosts(user, reponame, branch, path, cb) {
     tree = window.gotFiles[user][reponame].tree;
     app.state = window.gotFiles[user][reponame].state;
     app.state.path = path ? path : "";
-    console.log(app.state);
     cb(null,getFiles(tree,path,""));
   }else{
     repo.show(function(err, repodata) {
       if (!branch) app.state.branch = branch = repodata.master_branch;
       app.state.permissions = repodata.permissions;
-      console.log(app.state);
       load();
     });
   }
