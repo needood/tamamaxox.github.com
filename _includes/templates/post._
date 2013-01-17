@@ -2,7 +2,7 @@
 <div class="document-menu">
   <div class="document-menu-content">
     <div class="fl filename">
-      <a class="browse-files" href="#<%= [ 'tree', app.state.branch, app.state.path || '' ].join('/') %>"></a>
+      <a class="browse-files" href="#<%= [ 'tree', branch, path || '' ].join('/') %>"></a>
       <input type="text" class="filepath" value="<%= _.filepath(path, file) %>"/>
       <div class="state"></div>
     </div>
