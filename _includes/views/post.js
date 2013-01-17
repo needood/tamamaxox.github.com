@@ -25,7 +25,8 @@ views.Post = Backbone.View.extend({
     if (confirm("Are you sure you want to delete that file?")) {
       deletePost(app.state.user, app.state.repo, app.state.branch, this.model.path, this.model.file, _.bind(function(err) {
         if (err) return alert('Error during deletion. Please wait 30 seconds and try again.');
-        router.navigate([app.state.user, app.state.repo, "tree", app.state.branch].join('/'), true);
+        if(window.gotFiles && window.gotFiles[app.state.user] && window.gotFiles[app.state.user][app.state.repo])window.gotFiles[app.state.user][app.state.repo] = null;
+        router.navigate(["tree", app.state.branch].join('/'), true);
       }, this));
     }
     return false;
@@ -204,6 +205,7 @@ views.Post = Backbone.View.extend({
       that.model.file = app.state.file;
       // rerender header to reflect the filename change
       app.instance.header.render();
+      if(window.gotFiles && window.gotFiles[app.state.user] && window.gotFiles[app.state.user][app.state.repo])window.gotFiles[app.state.user][app.state.repo] = null;
       that.updateURL();
     }
 
