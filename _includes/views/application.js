@@ -95,7 +95,7 @@ views.Application = Backbone.View.extend({
 
   post: function (user, repo, branch, path, file, mode) {
     this.loading('Loading post ...');
-    //loadPosts(user, repo, branch, path, _.bind(function (err, data) {
+    loadPosts(user, repo, branch, path, _.bind(function (err, data) {
       //if (err) return this.notify('error', 'The requested resource could not be found.');
       loadPost(user, repo, branch, path, file, _.bind(function (err, data) {
         this.loaded();
@@ -107,12 +107,12 @@ views.Application = Backbone.View.extend({
         var that = this;
       }, this));
       //this.header.render();
-    //}, this));
+    }, this));
   },
 
   newPost: function (user, repo, branch, path) {
     this.loading('Creating file ...');
-    //loadPosts(user, repo, branch, path, _.bind(function (err, data) {
+    loadPosts(user, repo, branch, path, _.bind(function (err, data) {
       emptyPost(user, repo, branch, path, _.bind(function(err, data) {
         this.loaded();
         data.jekyll = _.jekyll(path, data.file);
@@ -123,7 +123,7 @@ views.Application = Backbone.View.extend({
         app.state.file = data.file;
         this.header.render();
       }, this));
-    //}, this));
+    }, this));
   },
 
   profile: function(username) {
