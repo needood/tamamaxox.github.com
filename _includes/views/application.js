@@ -112,7 +112,7 @@ views.Application = Backbone.View.extend({
 
   newPost: function (user, repo, branch, path) {
     this.loading('Creating file ...');
-    loadPosts(user, repo, branch, path, _.bind(function (err, data) {
+    //loadPosts(user, repo, branch, path, _.bind(function (err, data) {
       emptyPost(user, repo, branch, path, _.bind(function(err, data) {
         this.loaded();
         data.jekyll = _.jekyll(path, data.file);
@@ -123,7 +123,7 @@ views.Application = Backbone.View.extend({
         app.state.file = data.file;
         this.header.render();
       }, this));
-    }, this));
+    //}, this));
   },
 
   profile: function(username) {
