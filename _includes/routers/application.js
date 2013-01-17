@@ -14,7 +14,7 @@ routers.Application = Backbone.Router.extend({
   },
 
   start: function() {
-    alert('start')
+    alert('')
     if (confirmExit()) {
       app.state = {
         //changed
