@@ -236,17 +236,21 @@ function loadPosts(user, reponame, branch, path, cb) {
           if (err) return cb("Branches couldn't be fetched");
           app.state.path = path ? path : "";
           app.state.branches = _.filter(branches, function(b) { return b !== branch });
+          window.gotFiles = true;
           cb(null, getFiles(tree, path, ""));
         });
       });
     });
   }
-
-  repo.show(function(err, repodata) {
-    if (!branch) app.state.branch = branch = repodata.master_branch;
-    app.state.permissions = repodata.permissions;
-    load();
-  });
+  if (window.gotFiles){
+    cb(null.getFiles(tree,path,""))
+  }else{
+    repo.show(function(err, repodata) {
+      if (!branch) app.state.branch = branch = repodata.master_branch;
+      app.state.permissions = repodata.permissions;
+      load();
+    });
+  }
 }
 
 // Serialize
