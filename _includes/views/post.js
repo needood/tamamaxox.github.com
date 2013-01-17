@@ -32,10 +32,10 @@ views.Post = Backbone.View.extend({
   },
 
   updateURL: function() {
-    var url = _.compact([app.state.user, app.state.repo, this.model.preview ? "blob" : "edit", app.state.branch, this.model.path, this.model.file]);
+    var url = _.compact([this.model.preview ? "blob" : "edit", app.state.branch, this.model.path, this.model.file]);
     router.navigate(url.join('/'), false);
   },
-
+ 
   _makeDirty: function(e) {
     this.dirty = true;
     if (this.editor) this.model.content = this.editor.getValue();
