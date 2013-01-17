@@ -1,14 +1,8 @@
 <div class="navigation clearfix">
-  <a href='/{{site.baseurl}}' class='title'><span>Prose</span></a>
+  <a href='#<%= [ 'tree', state.branch].join('/') %>' class='title'><span>Prose</span></a>
 
   <% if (state.repo) { %>
     <% var path = state.path %>
-    <% if (state.repo) { %>
-      <a class="repo" href="#<%= [ 'tree', state.branch].join('/') %>">
-        <%= state.repo %>
-      </a>
-    <% } %>
-
   <% } else { %>
     <%= app.state.title %>
   <% } %>
