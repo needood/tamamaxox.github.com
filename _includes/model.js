@@ -243,7 +243,7 @@ function loadPosts(user, reponame, branch, path, cb) {
     });
   }
   if (window.gotFiles){
-    tree = window.gotFiles
+    tree = window.gotFiles;
     cb(null.getFiles(tree,path,""))
   }else{
     repo.show(function(err, repodata) {
