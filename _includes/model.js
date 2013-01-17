@@ -248,8 +248,8 @@ function loadPosts(user, reponame, branch, path, cb) {
     });
   }
   if (window.gotFiles && window.gotFiles[user] && window.gotFiles[user][reponame] ){
-    tree = window.gotFiles.tree;
-    app.state = window.gotFiles.state;
+    tree = window.gotFiles[user][reponame].tree;
+    app.state = window.gotFiles[user][reponame].state;
     app.state.path = path ? path : "";
     console.log(app.state);
     cb(null,getFiles(tree,path,""));
