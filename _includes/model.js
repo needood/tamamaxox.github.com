@@ -367,7 +367,7 @@ function movePost(user, repo, branch, path, newPath, cb) {
 function emptyPost(user, repo, branch, path, cb) {
   var rawMetadata = "layout: post\npublished: false";
   var metadata = {
-    "layout": "default",
+    "layout": "post",
     "published": false,
   };
 
