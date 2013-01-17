@@ -96,7 +96,7 @@ views.Application = Backbone.View.extend({
   post: function (user, repo, branch, path, file, mode) {
     this.loading('Loading post ...');
     //loadPosts(user, repo, branch, path, _.bind(function (err, data) {
-      if (err) return this.notify('error', 'The requested resource could not be found.');
+      //if (err) return this.notify('error', 'The requested resource could not be found.');
       loadPost(user, repo, branch, path, file, _.bind(function (err, data) {
         this.loaded();
         //this.header.render();
