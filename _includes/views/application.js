@@ -88,22 +88,26 @@ views.Application = Backbone.View.extend({
     loadPosts(user, repo, branch, path, _.bind(function (err, data) {
       this.loaded();
       if (err) return this.notify('error', 'The requested resource could not be found.');
-      this.header.render();
+      //this.header.render();
       this.replaceMainView("posts", new views.Posts({ model: data, id: 'posts' }).render());
     }, this));
   },
 
   post: function (user, repo, branch, path, file, mode) {
     this.loading('Loading post ...');
-    loadPost(user, repo, branch, path, file, _.bind(function (err, data) {
-      this.loaded();
-      this.header.render();
+    //loadPosts(user, repo, branch, path, _.bind(function (err, data) {
       if (err) return this.notify('error', 'The requested resource could not be found.');
-      data.preview = !(mode === "edit");
-      data.lang = _.mode(file);
-      this.replaceMainView(window.authenticated ? "post" : "read-post", new views.Post({ model: data, id: 'post' }).render());
-      var that = this;
-    }, this));
+      loadPost(user, repo, branch, path, file, _.bind(function (err, data) {
+        this.loaded();
+        //this.header.render();
+        if (err) return this.notify('error', 'The requested resource could not be found.');
+        data.preview = !(mode === "edit");
+        data.lang = _.mode(file);
+        this.replaceMainView(window.authenticated ? "post" : "read-post", new views.Post({ model: data, id: 'post' }).render());
+        var that = this;
+      }, this));
+      //this.header.render();
+    //}, this));
   },
 
   newPost: function (user, repo, branch, path) {
