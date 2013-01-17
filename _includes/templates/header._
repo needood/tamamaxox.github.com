@@ -1,5 +1,6 @@
 <div class="navigation clearfix">
   <a href='#<%= [ 'tree', state.branch].join('/') %>' class='title'><span>Prose</span></a>
+  <a href="/">返回主页</a>
   <a href="/{{site.baseurl}}#tree/master/_posts">文章列表</a>
   <a href="/{{site.baseurl}}#new/master/_posts">发表新文章</a>
 
