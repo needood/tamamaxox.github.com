@@ -16,13 +16,13 @@
       <a class="button" href="https://github.com/login/oauth/authorize?client_id={{site.oauth_client_id}}&scope=repo,user,gist&redirect_uri=<%= encodeURIComponent(window.location.href) %>">Sign in using Github</a>
   <% } %>
   </div>
-  <% if (state.file) { %>
+  <% if(state.path){ if (state.mode != 'tree') { %>
     <a class="browse-files" href="#<%= [ 'tree', state.branch, state.path].join('/') %>">
       Browse Files
     </a>
-  <% } else if (state.path) { %>
+  <% } else { %>
     <a class="browse-files" href="#<%= [ 'tree', state.branch, _.parentPath(state.path)].join('/') %>">
       Browse Files
     </a>
-  <% } %>
+  <% } } %>
 </div>
