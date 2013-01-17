@@ -95,18 +95,14 @@ views.Application = Backbone.View.extend({
 
   post: function (user, repo, branch, path, file, mode) {
     this.loading('Loading post ...');
-    loadPosts(user, repo, branch, path, _.bind(function (err, data) {
-      if (err) return this.notify('error', 'The requested resource could not be found.');
-      loadPost(user, repo, branch, path, file, _.bind(function (err, data) {
-        this.loaded();
-        this.header.render();
-        if (err) return this.notify('error', 'The requested resource could not be found.');
-        data.preview = !(mode === "edit");
-        data.lang = _.mode(file);
-        this.replaceMainView(window.authenticated ? "post" : "read-post", new views.Post({ model: data, id: 'post' }).render());
-        var that = this;
-      }, this));
+    loadPost(user, repo, branch, path, file, _.bind(function (err, data) {
+      this.loaded();
       this.header.render();
+      if (err) return this.notify('error', 'The requested resource could not be found.');
+      data.preview = !(mode === "edit");
+      data.lang = _.mode(file);
+      this.replaceMainView(window.authenticated ? "post" : "read-post", new views.Post({ model: data, id: 'post' }).render());
+      var that = this;
     }, this));
   },
 
