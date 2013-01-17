@@ -23,7 +23,7 @@ routers.Application = Backbone.Router.extend({
         branch: "master",
         path: ""
       };
-      app.instance.start();
+      app.instance.posts(url.user, url.repo, url.branch, url.path);
     }
   },
 
