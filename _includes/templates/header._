@@ -21,7 +21,7 @@
       Browse Files
     </a>
   <% } else { %>
-    <a class="browse-files" href="#<%= [ 'tree', state.branch, _.parentPath(state.path)].join('/') %>">
+    <a class="browse-files" href="#<%= [ 'tree', state.branch, state.path=='' ? '' : _.parentPath(state.path)].join('/') %>">
       Browse Files
     </a>
   <% } %>
