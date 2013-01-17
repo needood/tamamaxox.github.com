@@ -33,6 +33,7 @@ views.Post = Backbone.View.extend({
 
   updateURL: function() {
     var url = _.compact([this.model.preview ? "blob" : "edit", app.state.branch, this.model.path, this.model.file]);
+    window.gotFiles = null;
     router.navigate(url.join('/'), false);
   },
  
