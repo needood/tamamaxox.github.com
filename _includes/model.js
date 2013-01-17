@@ -236,14 +236,18 @@ function loadPosts(user, reponame, branch, path, cb) {
           if (err) return cb("Branches couldn't be fetched");
           app.state.path = path ? path : "";
           app.state.branches = _.filter(branches, function(b) { return b !== branch });
-          window.gotFiles = tree;
+          window.gotFiles = {
+            tree:tree,
+            state:app.state
+          }
           cb(null, getFiles(tree, path, ""));
         });
       });
     });
   }
   if (window.gotFiles){
-    tree = window.gotFiles;
+    tree = window.gotFiles.tree;
+    app.state = window.gotFiles.state;
     app.state.path = path ? path : "";
     console.log(app.state);
     cb(null,getFiles(tree,path,""));
