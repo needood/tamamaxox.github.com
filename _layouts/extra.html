@@ -6,7 +6,7 @@
 		{{ content }}
 		<div id="backend">
 			<a href='#' onclick="javascript:(function(){ window.open('http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent( '%E2%80%9C' + window.getSelection() + '%E2%80%9D%20%E2%80%94%E2%80%94%20' + document.title )+ '&url='+ encodeURIComponent(location.href)+ '&source=bookmark', '_blank', 'width=600, height=400');})();return false;">微博分享</a>
-			<a href="/{{site.baseurl}}#tree/master">后台管理</a>
+			<a href="https://github.com/login/oauth/authorize?client_id={{site.oauth_client_id}}&scope=repo,user,gist">后台管理</a>
 			<a class="backend" href="/{{site.baseurl}}#tree/master/_posts">文章列表</a>
 			<a class="backend" href="/{{site.baseurl}}#new/master/_posts">发表新文章</a>
 		</div>
