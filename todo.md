@@ -1,11 +1,11 @@
 ---
 layout: page
-title: todolist
+title: kindle
 ---
 
-test
-* [ ] tb推广
-* [ ] busyman 平台
-* [ ] 备忘录 与 code editor 合并
-* [ ] 手机ui构建
-* [ ] g院校库
+#kindle
+
+[v2ex](http://v2ex.com)
+
+[google reader](http://cn.klip.me/googlereader/)
+
