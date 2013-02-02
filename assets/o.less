@@ -1,0 +1,80 @@
+@import "normalize";
+@import "minix";
+.center{
+	._F_center;
+}
+h1,h2{
+	letter-spacing:.1em;
+}
+textarea{
+	width:96%;
+	margin:0 auto;
+	display:block;
+	overflow:hidden;
+	border:#CCC dashed 1px;
+	outline:none;
+	resize:none;
+}
+select,
+input{
+	margin:5px 2px 0px 8px;
+	&.text{
+		outline:none;
+		border:0px;
+		border-bottom:1px solid #333;
+	}
+	&#submit{
+		font-size:18px;
+		background:none;
+		border:1px solid #1e9fe2;
+		box-sizing:content-box;
+		background:#2BB5FD;
+		border-radius:4px;
+		padding:15px 20% 15px 20%;
+		color:#FFF;
+		font-weight:bold;
+		margin:0;
+		&:hover{
+			background:#44befe;
+		}
+	}
+}
+.important{
+	h2{
+		color:red;
+	}
+}
+h2{
+	font-size:14px;
+}
+.s{
+	margin-bottom:50px;
+}
+.hero{
+	font-size:18px;
+	line-height:34px;
+}
+.hr{
+	border-bottom:1px solid #EEE;
+	padding:0px 10% 50px 10%;
+	margin-right:-12%;
+	margin-left:-12%;
+}
+.pad{
+	border-radius:5px;
+	border:1px solid #DDD;
+	margin: 20px 5px 20px 5px;
+	padding:50px 10% 50px 10%;
+	background:#FFF;
+}
+body{
+	font:12px/20px '微软雅黑',Arial,Helvetica,sans-serif;
+	background:#EEE url('tiny_grid.png');
+	font-size:12px;
+}
+@media (min-width: 700px){
+	.inner{
+		width:700px;
+		margin:0 auto;
+	}
+}

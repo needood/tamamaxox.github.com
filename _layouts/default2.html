@@ -5,18 +5,25 @@ layout: extra
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<title>{{ page.title }} - {{ site.title }}</title>
 		<base target="_blank" />
-		<link rel="stylesheet" href="{{ site.F.path.css }}/o2.css" />
+		<link rel="stylesheet" href="/assets/o.css" />
+		<style type="text/css">
+#b612{padding:0px;border:0px;cursor:pointer;display:block;height:80px;background-image:url('b612.jpg');background-color:transparent;background-repeat:no-repeat;background-position:left top;width:80px;margin-left:auto;margin-right:auto;transition-duration:0.5s;-webkit-transition-duration:0.5s;-moz-transition-duration:0.5s;-o-transition-duration:2s;}#b612:hover{background-position:right bottom;}
+		</style>
 	</head>
 	<body>
-		<div class="header">
-			<header>
-				<div class="inner">{{ page.title }}</div>
-			</header>
-		</div>
-		<div class="inner article">
-			<article>
-				{{ content }}
-			</article>
+		<div class="inner">
+			<div class="pad">
+				<div class="s">
+					<header>
+						{{ page.title }}
+					</header>
+				</div>
+				<div class="s article">
+					<article>
+						{{ content }}
+					</article>
+				</div>
+			</div>
 		</div>
 		<a href="http://shop60110263.taobao.com/" target="_blank" id="b612"></a>
 
