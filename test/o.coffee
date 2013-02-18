@@ -1,3 +1,3 @@
 $(document).ready ()->
-	$('#header').swipeLeft ()->
+	$('#header').tap ()->
 		alert "oh~"

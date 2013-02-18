@@ -2,7 +2,7 @@
 (function() {
 
   $(document).ready(function() {
-    return $('#header').swipeLeft(function() {
+    return $('#header').tap(function() {
       return alert("oh~");
     });
   });
