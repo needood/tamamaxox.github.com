@@ -7,10 +7,7 @@ function bind_city_widget(province_sel, city_sel, district_sel, can_empty) {
 			data:{pid: $(this).attr("value")},
 			success:function(data,textStatus,jqXHR){
 				var options;
-				console.log(data);
-
 				for(d in data){
-					console.log(_.template("<option value='<%= value %>'><%= name %></option>")({value:d,name:data[d]}))
 				options += _.template("<option value='<%= value %>'><%= name %></option>")({value:d,name:data[d]})
 				}
 				$(city_sel).html(options)
@@ -25,12 +22,10 @@ function bind_city_widget(province_sel, city_sel, district_sel, can_empty) {
 		})
 	})
 	$(city_sel).bind("change",function(e, district_idx){
-		console.log($(this).attr('value'));
 		$.ajax({
 			url:"/json/d",
 			data:{cid: $(this).attr("value")},
 			success:function(data,textStatus,jqXHR){
-				console.log(data);
 				var options;
 				if(can_empty) {
 					options += '<option value=0>- 区 -</option>';
@@ -52,9 +47,6 @@ function bind_city_widget(province_sel, city_sel, district_sel, can_empty) {
 function set_location(province_sel, province_val, 
 		city_sel, city_val,
 		district_sel, district_val) {
-	console.log(province_val);
-	console.log(city_val);
-	console.log(district_val);
 
 	$(province_sel+' option').each(function(index){
 		if($(this).attr('value') == province_val) {
