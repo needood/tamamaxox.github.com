@@ -40,6 +40,7 @@ p{max-width:550px}
 form textarea{border:1px solid #eee;outline:0}
 form button{border:1px solid #eee;padding:2px 8px;color:#333;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
 form button:hover{color:#555}
+ul{list-style:none}
 .title{*zoom:1;border-bottom:1px solid #eee;padding-left:120px;height:60px;line-height:60px}
 .title:before{display:table;content:"";line-height:0}
 .title:after{display:table;content:"";line-height:0;clear:both}
