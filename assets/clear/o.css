@@ -44,8 +44,8 @@ ul{list-style:none}
 .title{*zoom:1;border-bottom:1px solid #eee;padding-left:120px;height:60px;line-height:60px}
 .title:before{display:table;content:"";line-height:0}
 .title:after{display:table;content:"";line-height:0;clear:both}
-.title h1{float:left;margin:0 10px 0 0;padding:0;font-size:18px;font-weight:normal;border-bottom:3px solid #eb0000}
-.title p{margin:5px 0 -5px 0;padding:0}
+.title h1{float:left;padding:0;margin:0 10px 0 0;font-size:18px;font-weight:normal;border-bottom:3px solid #eb0000;height:60px;line-height:60px}
+.title p{margin:5px 0 -5px 0;padding:0 0 0 10px;height:60px;line-height:60px}
 .content{padding:30px 0 0 0;margin-left:120px;width:600px;border-bottom:1px dashed #eee}
 #nav{line-height:30px;height:0;text-align:right;margin-left:120px;width:600px;}
 #nav span,#nav a{margin-right:5px;border-right:1px solid #d6d6d6;padding-right:5px;}
