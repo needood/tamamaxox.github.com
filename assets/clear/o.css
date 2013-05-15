@@ -54,7 +54,6 @@ ul{list-style:none}
 .comment{margin-top:40px;margin-bottom:0;}
 .comment .commentt{font-weight:bold}
 .comment .commentb{margin-top:0}
-.comment .commentform{margin-bottom:10px}
 .action{height:24px;line-height:24px;color:#dbdbdb;font-weight:bold;}
 .action:before{content:">"}
 .action a{font-weight:normal;margin-left:5px}
