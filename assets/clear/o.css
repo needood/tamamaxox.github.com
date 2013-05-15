@@ -46,7 +46,10 @@ ul{list-style:none}
 .title:after{display:table;content:"";line-height:0;clear:both}
 .title h1{float:left;padding:0;margin:0 10px 0 0;font-size:18px;font-weight:normal;border-bottom:3px solid #eb0000;height:60px;line-height:60px}
 .title p{margin:5px 0 -5px 0;padding:0 0 0 10px;height:60px;line-height:60px}
-.content{padding:30px 0 0 0;margin-left:120px;width:600px;border-bottom:1px dashed #eee}
+.content{padding:30px 0 0 0;margin-left:120px;width:600px}
+.popup{padding:30px 0 0 0;margin-left:120px;width:600px;display:none}
+.showpopup .popup{display:block}
+.showpopup .content{display:none}
 #nav{line-height:30px;height:0;text-align:right;margin-left:120px;width:600px;}
 #nav span,#nav a{margin-right:5px;border-right:1px solid #d6d6d6;padding-right:5px;}
 #nav span.loginbtn,#nav a.loginbtn{margin-right:0;border-right:none;padding-right:0;color:#aaa;font-weight:bold;text-decoration:none;}
