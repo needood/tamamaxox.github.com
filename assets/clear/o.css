@@ -37,11 +37,11 @@ table{border-collapse:collapse;border-spacing:0}
 body{font-size:12px;color:#555}
 a{color:#555}
 p{max-width:550px}
-form textarea,form input{border:1px solid #eee;outline:0}
-form button{border:1px solid #eee;padding:2px 8px;color:#333;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
-form button:hover{color:#555}
+textarea,input{border:1px solid #e4e4e4;outline:0}
+button{border:1px solid #e4e4e4;padding:2px 8px;color:#333;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+button:hover{color:#555}
 ul{list-style:none}
-.title{*zoom:1;border-bottom:1px solid #eee;padding-left:120px;height:60px;line-height:60px}
+.title{*zoom:1;border-bottom:1px solid #e4e4e4;padding-left:120px;height:60px;line-height:60px}
 .title:before{display:table;content:"";line-height:0}
 .title:after{display:table;content:"";line-height:0;clear:both}
 .title h1{float:left;padding:0;margin:0 10px 0 0;font-size:18px;font-weight:normal;border-bottom:3px solid #eb0000;height:60px;line-height:60px}
@@ -51,13 +51,13 @@ ul{list-style:none}
 .showpopup .popup{display:block}
 .showpopup .content{display:none}
 #nav{line-height:30px;height:0;text-align:right;margin-left:120px;width:600px;}
-#nav span,#nav a{margin-right:5px;border-right:1px solid #d6d6d6;padding-right:5px;}
+#nav span,#nav a{margin-right:5px;border-right:1px solid #cdcdcd;padding-right:5px;}
 #nav span.loginbtn,#nav a.loginbtn{margin-right:0;border-right:none;padding-right:0;color:#aaa;font-weight:bold;text-decoration:none;}
 #nav span.loginbtn:hover,#nav a.loginbtn:hover{text-decoration:underline}
 .comment{margin-top:40px;margin-bottom:0;}
 .comment .commentt{font-weight:bold}
 .comment .commentb{margin-top:0}
-.action{height:24px;line-height:24px;color:#dbdbdb;font-weight:bold;}
+.action{height:24px;line-height:24px;color:#d2d2d2;font-weight:bold;}
 .action:before{content:">"}
 .action a{font-weight:normal;margin-left:5px}
 table .q{vertical-align:top;padding-bottom:5px;padding-right:5px;text-align:right}
