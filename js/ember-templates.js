@@ -4,10 +4,10 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   var buffer = '', stack1;
 
 
-  data.buffer.push("<div id=\"header-warp\">\n    <header id=\"header\">\n        <div class=\"inner\">\n            <div class=\"header-herf-list\">\n                <a href=\"#/r/Gunners\">阿森纳新闻</a>\n                <a href=\"#/page/md/me\">我</a>\n            </div>\n            <span class=\"header-title\">needood.com</span>\n        </div>\n    </header>\n</div>\n<div class=\"inner\">\n    ");
+  data.buffer.push("\n<div class=\"f-main\">\n<div id=\"header-warp\">\n    <header id=\"header\">\n        <div class=\"inner\">\n            <div class=\"header-herf-list\">\n                <a href=\"#/r/Gunners\">阿森纳新闻</a>\n                <a href=\"#/page/md/me\">我</a>\n            </div>\n            <span class=\"header-title\">needood.com</span>\n        </div>\n    </header>\n</div>\n<div class=\"inner\">\n    ");
   stack1 = helpers._triageMustache.call(depth0, "outlet", {hash:{},hashTypes:{},hashContexts:{},contexts:[depth0],types:["ID"],data:data});
   if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
-  data.buffer.push("\n</div>\n<script>\n    (function() {\n            var header = new Headroom(document.querySelector(\"#header\"), {\n                tolerance: 5,\n                offset : 80,\n                classes: {\n                    initial: \"animated\",\n                    pinned: \"slideDown\",\n                    unpinned: \"slideUp\"\n                }\n            });\n            header.init();\n    }());\n</script>\n");
+  data.buffer.push("\n</div>\n<div class=\"f-main-footer-\"></div>\n</div>\n<div class=\"f-main-footer\">\n    powered by <a href=\"emberjs.com\">emberjs</a>\n</div>\n<script>\n    (function() {\n            var header = new Headroom(document.querySelector(\"#header\"), {\n                tolerance: 5,\n                offset : 80,\n                classes: {\n                    initial: \"animated\",\n                    pinned: \"slideDown\",\n                    unpinned: \"slideUp\"\n                }\n            });\n            header.init();\n    }());\n</script>\n");
   return buffer;
   
 });
